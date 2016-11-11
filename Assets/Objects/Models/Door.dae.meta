@@ -1,0 +1,405 @@
+fileFormatVersion: 2
+guid: fdf3d30e07c68c94e900099e6ff5af62
+timeCreated: 1478462278
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chair_Rail4
+    100002: door
+    100004: group_0
+    100006: group_1
+    100008: group_1 1
+    100010: group_2
+    100012: group_2 1
+    100014: ID106
+    100016: ID114
+    100018: ID120
+    100020: ID126
+    100022: ID143
+    100024: ID149
+    100026: ID155
+    100028: ID161
+    100030: ID167
+    100032: ID180
+    100034: ID186
+    100036: ID192
+    100038: ID198
+    100040: ID204
+    100042: ID210
+    100044: ID242
+    100046: ID250
+    100048: ID258
+    100050: ID266
+    100052: ID272
+    100054: ID278
+    100056: ID284
+    100058: ID299
+    100060: ID305
+    100062: ID311
+    100064: ID317
+    100066: ID323
+    100068: ID336
+    100070: ID342
+    100072: ID348
+    100074: ID354
+    100076: ID360
+    100078: ID366
+    100080: ID82
+    100082: ID90
+    100084: ID98
+    100086: image_0
+    100088: instance_0
+    100090: instance_1
+    100092: instance_10
+    100094: instance_10 1
+    100096: instance_11
+    100098: instance_2
+    100100: instance_2 1
+    100102: instance_3
+    100104: instance_3 1
+    100106: instance_4
+    100108: instance_4 1
+    100110: instance_5
+    100112: instance_5 1
+    100114: instance_6
+    100116: instance_6 1
+    100118: instance_7
+    100120: instance_7 1
+    100122: instance_8
+    100124: instance_8 1
+    100126: instance_9
+    100128: instance_9 1
+    100130: KLAMKA
+    100132: KLAMKA 1
+    100134: //RootNode
+    100136: Panel
+    100138: Panel 1
+    100140: panel_beam
+    100142: panel_beam 1
+    100144: panel_beam 2
+    100146: panel_beam 3
+    100148: panel_beam 4
+    100150: panel_beam 5
+    100152: panel_beam 6
+    100154: panel_beam 7
+    100156: panel_beam 8
+    100158: panel_beam 9
+    100160: panel_column
+    100162: panel_column 1
+    100164: panel_column 2
+    100166: panel_column 3
+    100168: panel_cover
+    100170: panel_cover 1
+    400000: Chair_Rail4
+    400002: door
+    400004: group_0
+    400006: group_1
+    400008: group_1 1
+    400010: group_2
+    400012: group_2 1
+    400014: ID106
+    400016: ID114
+    400018: ID120
+    400020: ID126
+    400022: ID143
+    400024: ID149
+    400026: ID155
+    400028: ID161
+    400030: ID167
+    400032: ID180
+    400034: ID186
+    400036: ID192
+    400038: ID198
+    400040: ID204
+    400042: ID210
+    400044: ID242
+    400046: ID250
+    400048: ID258
+    400050: ID266
+    400052: ID272
+    400054: ID278
+    400056: ID284
+    400058: ID299
+    400060: ID305
+    400062: ID311
+    400064: ID317
+    400066: ID323
+    400068: ID336
+    400070: ID342
+    400072: ID348
+    400074: ID354
+    400076: ID360
+    400078: ID366
+    400080: ID82
+    400082: ID90
+    400084: ID98
+    400086: image_0
+    400088: instance_0
+    400090: instance_1
+    400092: instance_10
+    400094: instance_10 1
+    400096: instance_11
+    400098: instance_2
+    400100: instance_2 1
+    400102: instance_3
+    400104: instance_3 1
+    400106: instance_4
+    400108: instance_4 1
+    400110: instance_5
+    400112: instance_5 1
+    400114: instance_6
+    400116: instance_6 1
+    400118: instance_7
+    400120: instance_7 1
+    400122: instance_8
+    400124: instance_8 1
+    400126: instance_9
+    400128: instance_9 1
+    400130: KLAMKA
+    400132: KLAMKA 1
+    400134: //RootNode
+    400136: Panel
+    400138: Panel 1
+    400140: panel_beam
+    400142: panel_beam 1
+    400144: panel_beam 2
+    400146: panel_beam 3
+    400148: panel_beam 4
+    400150: panel_beam 5
+    400152: panel_beam 6
+    400154: panel_beam 7
+    400156: panel_beam 8
+    400158: panel_beam 9
+    400160: panel_column
+    400162: panel_column 1
+    400164: panel_column 2
+    400166: panel_column 3
+    400168: panel_cover
+    400170: panel_cover 1
+    2300000: Chair_Rail4
+    2300002: group_0
+    2300004: group_1
+    2300006: group_1 1
+    2300008: group_2
+    2300010: group_2 1
+    2300012: ID106
+    2300014: ID114
+    2300016: ID120
+    2300018: ID126
+    2300020: ID143
+    2300022: ID149
+    2300024: ID155
+    2300026: ID161
+    2300028: ID167
+    2300030: ID180
+    2300032: ID186
+    2300034: ID192
+    2300036: ID198
+    2300038: ID204
+    2300040: ID242
+    2300042: ID250
+    2300044: ID258
+    2300046: ID266
+    2300048: ID272
+    2300050: ID278
+    2300052: ID284
+    2300054: ID299
+    2300056: ID305
+    2300058: ID311
+    2300060: ID317
+    2300062: ID323
+    2300064: ID336
+    2300066: ID342
+    2300068: ID348
+    2300070: ID354
+    2300072: ID360
+    2300074: ID82
+    2300076: ID90
+    2300078: ID98
+    2300080: image_0
+    2300082: panel_beam
+    2300084: panel_beam 1
+    2300086: panel_beam 2
+    2300088: panel_beam 3
+    2300090: panel_beam 4
+    2300092: panel_beam 5
+    2300094: panel_beam 6
+    2300096: panel_beam 7
+    2300098: panel_beam 8
+    2300100: panel_beam 9
+    2300102: panel_column
+    2300104: panel_column 1
+    2300106: panel_column 2
+    2300108: panel_column 3
+    2300110: panel_cover
+    2300112: panel_cover 1
+    3300000: Chair_Rail4
+    3300002: group_0
+    3300004: group_1
+    3300006: group_1 1
+    3300008: group_2
+    3300010: group_2 1
+    3300012: ID106
+    3300014: ID114
+    3300016: ID120
+    3300018: ID126
+    3300020: ID143
+    3300022: ID149
+    3300024: ID155
+    3300026: ID161
+    3300028: ID167
+    3300030: ID180
+    3300032: ID186
+    3300034: ID192
+    3300036: ID198
+    3300038: ID204
+    3300040: ID242
+    3300042: ID250
+    3300044: ID258
+    3300046: ID266
+    3300048: ID272
+    3300050: ID278
+    3300052: ID284
+    3300054: ID299
+    3300056: ID305
+    3300058: ID311
+    3300060: ID317
+    3300062: ID323
+    3300064: ID336
+    3300066: ID342
+    3300068: ID348
+    3300070: ID354
+    3300072: ID360
+    3300074: ID82
+    3300076: ID90
+    3300078: ID98
+    3300080: image_0
+    3300082: panel_beam
+    3300084: panel_beam 1
+    3300086: panel_beam 2
+    3300088: panel_beam 3
+    3300090: panel_beam 4
+    3300092: panel_beam 5
+    3300094: panel_beam 6
+    3300096: panel_beam 7
+    3300098: panel_beam 8
+    3300100: panel_beam 9
+    3300102: panel_column
+    3300104: panel_column 1
+    3300106: panel_column 2
+    3300108: panel_column 3
+    3300110: panel_cover
+    3300112: panel_cover 1
+    4300000: group_0
+    4300002: Chair_Rail4
+    4300004: panel_column
+    4300006: panel_column
+    4300008: panel_beam
+    4300010: panel_cover
+    4300012: ID82
+    4300014: ID90
+    4300016: ID98
+    4300018: ID106
+    4300020: ID114
+    4300022: ID120
+    4300024: ID126
+    4300026: group_1
+    4300028: ID143
+    4300030: ID149
+    4300032: ID155
+    4300034: ID161
+    4300036: ID167
+    4300038: group_2
+    4300040: ID180
+    4300042: ID186
+    4300044: ID192
+    4300046: ID198
+    4300048: ID204
+    4300050: panel_beam
+    4300052: panel_cover
+    4300054: ID242
+    4300056: ID250
+    4300058: ID258
+    4300060: ID266
+    4300062: ID272
+    4300064: ID278
+    4300066: ID284
+    4300068: group_1
+    4300070: ID299
+    4300072: ID305
+    4300074: ID311
+    4300076: ID317
+    4300078: ID323
+    4300080: group_2
+    4300082: ID336
+    4300084: ID342
+    4300086: ID348
+    4300088: ID354
+    4300090: ID360
+    4300092: image_0
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
