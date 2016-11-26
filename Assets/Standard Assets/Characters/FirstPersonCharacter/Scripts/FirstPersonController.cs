@@ -36,6 +36,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_StepCycle;
         private float m_NextStep;
         private AudioSource m_AudioSource;
+        private Collider collides;
+        
 
         // Use this for initialization
         private void Start()
@@ -49,6 +51,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_NextStep = m_StepCycle/2f;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            collides = GetComponent<Collider>();
         }
 
 
@@ -201,6 +204,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+    
+        private void OnTriggerEnter(Collider collide) {
+            
+            if (collide.gameObject.tag.Equals("Door")) {
+               transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
+            }
         }
     }
 }
