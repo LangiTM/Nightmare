@@ -12,7 +12,7 @@ public class PazzledObject : MonoBehaviour {
 	void Update () {
 	
 	}
-    private void OnTriggerEnter(Collider collide)
+    public void findKey()
     {
         GameObject refg = GameObject.Find("TextController");
         TextController t = refg.GetComponent<TextController>();

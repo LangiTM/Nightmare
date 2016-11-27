@@ -69,7 +69,24 @@ namespace UnityStandardAssets.Characters.FirstPerson
         // Update is called once per frame
         private void Update()
         {
-            
+
+            //for ray casting 
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 1.0f))
+            {
+                //get the object
+                GameObject hitted= hit.collider.gameObject;
+                //if the object is interactable (for instance Rock2) 
+                if (hitted.name == "Rock2")
+                {
+                    PazzledObject po = hitted.GetComponent<PazzledObject>();
+                    po.findKey();
+                }
+            }
+
+
             if (Input.GetKey(KeyCode.Return))
                 t.textClear();
           
