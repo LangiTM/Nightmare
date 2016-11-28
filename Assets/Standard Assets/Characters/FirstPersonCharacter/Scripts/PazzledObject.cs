@@ -20,7 +20,7 @@ public class PazzledObject : MonoBehaviour {
         UnityStandardAssets.Characters.FirstPerson.FirstPersonController.key_1 = true;
 
        
-         t.textUpdate("You've found a key!! Go open the door. \n press enter");
+         t.textUpdate("You've found a key!! Go open the door. \n Click to exit");
 
         
     }

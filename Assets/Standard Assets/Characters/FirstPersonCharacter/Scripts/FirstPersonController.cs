@@ -73,7 +73,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //for ray casting 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-
+            //find any object within a range of 1 step forward. 
             if (Physics.Raycast(ray, out hit, 1.0f))
             {
                 //get the object
@@ -84,10 +84,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     PazzledObject po = hitted.GetComponent<PazzledObject>();
                     po.findKey();
                 }
+                else if (hitted.name == "Riddle1")//for reading a riddle
+                {
+                    Note no = hitted.GetComponent<Note>();
+                    no.readNote();
+                }
             }
 
-
-            if (Input.GetKey(KeyCode.Return))
+            //for clearing the text pop up
+            if (Input.GetMouseButtonDown(0))
                 t.textClear();
           
              RotateView();
@@ -248,9 +253,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (collide.gameObject.tag.Equals("Door")&&key_1) {
                transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
             }
-            else if(collide.gameObject.tag.Equals("Door") && !key_1)
+            else if (collide.gameObject.tag.Equals("Door") && !key_1)
             {
-                t.textUpdate("Door is locked. You need to find a key \n press enter");
+                t.textUpdate("Door is locked. Go find a key. \n Click to exit");
+            }
+            else if(collide.gameObject.tag.Equals("Door_out") )//for outside door. 
+            {
+                Application.LoadLevel("MainFloor");
 
             }
         }
