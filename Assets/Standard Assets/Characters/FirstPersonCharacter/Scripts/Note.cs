@@ -19,9 +19,15 @@ public class Note : MonoBehaviour
     {
         GameObject refg = GameObject.Find("TextController");
         TextController t = refg.GetComponent<TextController>();
+        string text="";
+        if (transform.name == "Riddle1")
+        {
+            text = "What you seek is hidden in an object.\nLook closely at an object hard and sturdy. \n click to exit";
+        }
+        else if (transform.name == "Riddle2")
+            text = "Beautiful music. You definetly need a good book too";
 
-
-        t.textUpdate("What you seek is hidden in an object.\nLook closely at an object hard and sturdy. \n click to exit");
+        t.textUpdate(text);
 
 
     }

@@ -43,6 +43,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
          * For storing the items player has
          * ************************************************/
         public static Boolean key_1;
+        public static Boolean key_2;
+
         GameObject refg;
         TextController t;
 
@@ -74,17 +76,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             //find any object within a range of 1 step forward. 
-            if (Physics.Raycast(ray, out hit, 1.0f))
+            if (Physics.Raycast(ray, out hit, 3.0f))
             {
                 //get the object
+                
                 GameObject hitted= hit.collider.gameObject;
+                Debug.Log(hitted.name);
                 //if the object is interactable (for instance Rock2) 
-                if (hitted.name == "Rock2")
+                if (hitted.name == "key_1" || hitted.name == "key_2") 
                 {
                     PazzledObject po = hitted.GetComponent<PazzledObject>();
                     po.findKey();
                 }
-                else if (hitted.name == "Riddle1")//for reading a riddle
+                else if (hitted.tag=="Riddle")//for reading a riddle
                 {
                     Note no = hitted.GetComponent<Note>();
                     no.readNote();
@@ -92,6 +96,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             //for clearing the text pop up
+            if (Input.GetMouseButtonDown(1))
+                t.condUpdate();
             if (Input.GetMouseButtonDown(0))
                 t.textClear();
           
@@ -250,17 +256,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
             GameObject refg = GameObject.Find("TextController");
             TextController t=refg.GetComponent<TextController>();
 
-            if (collide.gameObject.tag.Equals("Door")&&key_1) {
+            if (collide.gameObject.name.Equals("DoorEntToWest") &&key_1||collide.gameObject.tag.Equals("Exit_Door")) {
                transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
             }
-            else if (collide.gameObject.tag.Equals("Door") && !key_1)
+            else if (collide.gameObject.name.Equals("DoorEntToWest") && !key_1)
             {
-                t.textUpdate("Door is locked. Go find a key. \n Click to exit");
+                t.textUpdate("Door is locked. You need key1 to open. Go find the key. \n Click to exit");
+            }
+            else if (collide.gameObject.name.Equals("DoorWestToMus") && key_2)
+            {
+                transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
+            }
+            else if (collide.gameObject.name.Equals("DoorWestToMus") && !key_2)
+            {
+                t.textUpdate("Door is locked. You need key2 to open. Go find the key. \n Click to exit");
             }
             else if(collide.gameObject.tag.Equals("Door_out") )//for outside door. 
             {
                 Application.LoadLevel("MainFloor");
 
+            }
+            else if (collide.gameObject.name.Equals("DoorEntToOutside") && !key_2)
+            {
+                t.textUpdate("Door is locked. You need to collect all keys to escape from here! \n Click to exit");
             }
         }
     }
