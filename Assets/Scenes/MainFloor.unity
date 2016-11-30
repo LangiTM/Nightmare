@@ -15031,7 +15031,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013541059138, guid: 8499185ee3c1b1b43b4022951c5e63aa, type: 2}
       propertyPath: m_TagString
-      value: Door
+      value: Exit_Door
       objectReference: {fileID: 0}
     - target: {fileID: 4000010049134026, guid: 8499185ee3c1b1b43b4022951c5e63aa, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
