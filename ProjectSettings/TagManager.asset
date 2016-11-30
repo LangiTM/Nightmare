@@ -8,6 +8,7 @@ TagManager:
   - Door_out
   - Riddle
   - Exit_Door
+  - Flashlight
   layers:
   - Default
   - TransparentFX
