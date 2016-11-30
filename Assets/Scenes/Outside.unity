@@ -2743,7 +2743,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 269798225}
   m_LocalRotation: {x: 0.0043061776, y: -0, z: -9.458744e-10, w: 0.99999076}
-  m_LocalPosition: {x: 0, y: -0.099999964, z: 0}
+  m_LocalPosition: {x: 0, y: -0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0.48800004, y: 0, z: 0}
   m_Children: []
@@ -6563,8 +6563,8 @@ Light:
   serializedVersion: 7
   m_Type: 2
   m_Color: {r: 0.6251342, g: 0.6985294, b: 0.50848836, a: 1}
-  m_Intensity: 2.98
-  m_Range: 50
+  m_Intensity: 2
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -16316,7 +16316,7 @@ Light:
   serializedVersion: 7
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.4
   m_Range: 500
   m_SpotAngle: 95.3
   m_CookieSize: 10
@@ -18180,8 +18180,8 @@ MonoBehaviour:
       m_RotationOrder: 4
   m_UseHeadBob: 1
   m_HeadBob:
-    HorizontalBobRange: 0.33
-    VerticalBobRange: 0.33
+    HorizontalBobRange: 0.1
+    VerticalBobRange: 0.1
     Bobcurve:
       serializedVersion: 2
       m_Curve:
@@ -18218,7 +18218,9 @@ MonoBehaviour:
     BobDuration: 0.2
     BobAmount: 0.1
   m_StepInterval: 5
-  m_FootstepSounds: []
+  m_FootstepSounds:
+  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
 --- !u!143 &1975280820
 CharacterController:
   m_ObjectHideFlags: 0

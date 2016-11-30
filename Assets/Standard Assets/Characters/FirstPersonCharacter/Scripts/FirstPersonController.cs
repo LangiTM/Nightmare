@@ -37,6 +37,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private AudioSource m_AudioSource;
         private Collider collides;
+        private Light flashlight;
 
 
         /***************************************************
@@ -63,6 +64,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             collides = GetComponent<Collider>();
+            flashlight = GameObject.FindGameObjectWithTag("Flashlight").GetComponent<Light>();
         }
 
 
@@ -89,6 +91,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     Note no = hitted.GetComponent<Note>();
                     no.readNote();
                 }
+            }
+
+            if (Input.GetKeyDown(KeyCode.F)) {
+                if (flashlight.intensity == 3)
+                    flashlight.intensity = 0;
+                else
+                    flashlight.intensity = 3;
             }
 
             //for clearing the text pop up
