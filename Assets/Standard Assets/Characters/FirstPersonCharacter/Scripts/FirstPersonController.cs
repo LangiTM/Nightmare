@@ -37,6 +37,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private AudioSource m_AudioSource;
         private Collider collides;
+        private Light flashlight;
 
 
         /***************************************************
@@ -65,6 +66,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             collides = GetComponent<Collider>();
+            flashlight = GameObject.FindGameObjectWithTag("Flashlight").GetComponent<Light>();
         }
 
 
@@ -95,6 +97,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 }
             }
 
+            if (Input.GetKeyDown(KeyCode.F)) {
+                if (flashlight.intensity == 3)
+                    flashlight.intensity = 0;
+                else
+                    flashlight.intensity = 3;
+            }
+
             //for clearing the text pop up
             if (Input.GetMouseButtonDown(1))
                 t.condUpdate();
@@ -110,7 +119,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void FixedUpdate()
         {
           
-            
                 float speed;
                 GetInput(out speed);
                 // always move along the camera forward as it is the direction that it being aimed at
