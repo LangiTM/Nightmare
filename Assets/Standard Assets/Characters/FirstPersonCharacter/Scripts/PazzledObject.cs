@@ -18,12 +18,14 @@ public class PazzledObject : MonoBehaviour {
         TextController t = refg.GetComponent<TextController>();
 
         if (transform.name == "key_1")
+        {
             UnityStandardAssets.Characters.FirstPerson.FirstPersonController.WestHall_Key = true;
+        }
         else if (transform.name == "key_2")
         {
             UnityStandardAssets.Characters.FirstPerson.FirstPersonController.MusicRoom_Key = true;
         }
-        else if (transform.name == "RecRoom_Key")
+        else if (transform.name == "key_3")
         {
             UnityStandardAssets.Characters.FirstPerson.FirstPersonController.RecRoom_Key = true;
         }

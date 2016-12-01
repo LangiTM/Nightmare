@@ -86,7 +86,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 GameObject hitted= hit.collider.gameObject;
                 Debug.Log(hitted.name);
                 //if the object is interactable (for instance Rock2) 
-                if (hitted.name == "key_1" || hitted.name == "key_2") 
+                if (hitted.name == "key_1" || hitted.name == "key_2" || hitted.name == "key_3") 
                 {
                     PazzledObject po = hitted.GetComponent<PazzledObject>();
                     po.findKey();
@@ -270,7 +270,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collide.gameObject.name.Equals("DoorEntToWest") && !WestHall_Key)
             {
-                t.textUpdate("Door is locked. You need key1 to open. Go find the key. \n Click to exit");
+                t.textUpdate("Door is locked. You need West Hall Key to open. Go find the key. \n Click to exit");
             }
             else if (collide.gameObject.name.Equals("DoorWestToMus") && MusicRoom_Key)
             {
@@ -278,7 +278,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collide.gameObject.name.Equals("DoorWestToMus") && !MusicRoom_Key)
             {
-                t.textUpdate("Door is locked. You need key2 to open. Go find the key. \n Click to exit");
+                t.textUpdate("Door is locked. You need Music Room Key to open. Go find the key. \n Click to exit");
+            }
+            else if (collide.gameObject.name.Equals("DoorRecToWest") && RecRoom_Key)
+            {
+                transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
+            }
+            else if (collide.gameObject.name.Equals("DoorRecToWest") && !RecRoom_Key)
+            {
+                t.textUpdate("The locked behind you when you entered! \n Click to exit");
             }
             else if(collide.gameObject.tag.Equals("Door_out") )//for outside door. 
             {
@@ -289,6 +297,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 t.textUpdate("Door is locked. You need to collect all keys to escape from here! \n Click to exit");
             }
+        
         }
     }
 }
