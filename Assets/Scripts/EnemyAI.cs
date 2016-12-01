@@ -1,26 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Characters.FirstPerson;
 
-public class EnemyAI : MonoBehaviour {
+public class EnemyAI : MonoBehaviour
+{
     public float viewRange; //distance at which the object will turn and look toward the target
     public float attackRange; //distance at which the object will move toward the target
     public float speed; //speed at which the object will move toward the target
-    public Transform target; //the target of the object - set in inspector
+    public GameObject target; //the target of the object - set in inspector
     public AudioClip warningSound; //sound the enemy plays when in view range of target
     public AudioClip attackSound; //sound the enemy plays when in attack range of target
     private float targetDistance;
     private Rigidbody rigidbody;
     private bool hasWarningGrowled = false;
     private bool hasAttackScreamed = false;
+    private FirstPersonController fpsc;
 
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
+        target = GameObject.Find("FPSController");
+        fpsc = target.GetComponent<FirstPersonController>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         targetDistance = Vector3.Distance(transform.position, target.transform.position);
-        if (targetDistance < attackRange)
+        if (targetDistance < attackRange && !fpsc.inWardrobe)
         {
             lookAtTarget();
             attackPlayer();
@@ -33,6 +40,17 @@ public class EnemyAI : MonoBehaviour {
             }
             //hasWarningGrowled = false;
         }
+        else if (targetDistance < attackRange && fpsc.inWardrobe)
+        {
+            Debug.Log("Safe");
+            lookAtTarget();
+            leavePlayer();
+        }
+        else if (targetDistance < viewRange && fpsc.inWardrobe)
+        {
+            lookAtTarget();
+            leavePlayer();
+        }
         else if (targetDistance < viewRange) //if can see target (player)
         {
             lookAtTarget();
@@ -43,7 +61,9 @@ public class EnemyAI : MonoBehaviour {
                 hasWarningGrowled = true;
             }
             //hasAttackScreamed = false;
-        } else if (targetDistance > viewRange && hasWarningGrowled) {
+        }
+        else if (targetDistance > viewRange && hasWarningGrowled)
+        {
             hasWarningGrowled = false;
             hasAttackScreamed = false;
         }
@@ -52,6 +72,12 @@ public class EnemyAI : MonoBehaviour {
     void attackPlayer()
     {
         transform.position += transform.forward * Time.deltaTime * speed; //move towards (already facing) target
+        transform.Rotate(0.0f, 180.0f, 0.0f);
+    }
+
+    void leavePlayer()
+    {
+        transform.position -= transform.forward * Time.deltaTime * speed; //move towards (already facing) target
         transform.Rotate(0.0f, 180.0f, 0.0f);
     }
 

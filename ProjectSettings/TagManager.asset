@@ -9,6 +9,7 @@ TagManager:
   - Riddle
   - Exit_Door
   - Flashlight
+  - WardrobeDoor
   layers:
   - Default
   - TransparentFX

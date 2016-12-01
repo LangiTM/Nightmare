@@ -47,6 +47,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public static Boolean MusicRoom_Key;
         public static Boolean RecRoom_Key;
 
+        /***************************************************
+         * For storing player status
+         * ************************************************/
+        public Boolean inWardrobe;
+
         GameObject refg;
         TextController t;
 
@@ -68,6 +73,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
             collides = GetComponent<Collider>();
             flashlight = GameObject.FindGameObjectWithTag("Flashlight").GetComponent<Light>();
+            inWardrobe = false;
         }
 
 
@@ -84,7 +90,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 //get the object
                 
                 GameObject hitted= hit.collider.gameObject;
-                Debug.Log(hitted.name);
+                //Debug.Log(hitted.name);
                 //if the object is interactable (for instance Rock2) 
                 if (hitted.name == "key_1" || hitted.name == "key_2" || hitted.name == "key_3") 
                 {
@@ -95,6 +101,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 {
                     Note no = hitted.GetComponent<Note>();
                     no.readNote();
+                }
+                else if (hitted.tag=="WardrobeDoor")
+                {
+                    if (!inWardrobe)
+                        t.textUpdate("[Press E to Enter Wardrobe]");
+                    else
+                        t.textUpdate("[Press E to Leave Wardrobe]");
+                    float doorDistance;
+                    if (!inWardrobe && Input.GetKeyDown(KeyCode.E))
+                    {
+                        t.textClear();
+                        doorDistance = Vector3.Distance(transform.position, hitted.transform.position);
+                        Debug.Log(doorDistance);
+                        //transform.Translate(Vector3.forward * (3 - doorDistance));
+                        transform.Translate(Vector3.forward * (doorDistance));
+                        inWardrobe = true;
+                    }
+                    else if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        t.textClear();
+                        transform.Translate(Vector3.forward * 3);
+                        inWardrobe = false;
+                    }
                 }
             }
 
@@ -108,7 +137,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //for clearing the text pop up
             if (Input.GetMouseButtonDown(1))
                 t.condUpdate();
-            if (Input.GetMouseButtonDown(0))
+            //if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
                 t.textClear();
           
              RotateView();
@@ -270,7 +300,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collide.gameObject.name.Equals("DoorEntToWest") && !WestHall_Key)
             {
-                t.textUpdate("Door is locked. You need West Hall Key to open. Go find the key. \n Click to exit");
+                t.textUpdate("The door to the West Hall is locked.");
             }
             else if (collide.gameObject.name.Equals("DoorWestToMus") && MusicRoom_Key)
             {
@@ -278,7 +308,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collide.gameObject.name.Equals("DoorWestToMus") && !MusicRoom_Key)
             {
-                t.textUpdate("Door is locked. You need Music Room Key to open. Go find the key. \n Click to exit");
+                t.textUpdate("The door to the Music Room Key is locked.");
             }
             else if (collide.gameObject.name.Equals("DoorRecToWest") && RecRoom_Key)
             {
@@ -286,7 +316,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collide.gameObject.name.Equals("DoorRecToWest") && !RecRoom_Key)
             {
-                t.textUpdate("The locked behind you when you entered! \n Click to exit");
+                t.textUpdate("The locked behind you!");
             }
             else if(collide.gameObject.tag.Equals("Door_out") )//for outside door. 
             {
@@ -295,9 +325,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collide.gameObject.name.Equals("DoorEntToOutside") && !MusicRoom_Key)
             {
-                t.textUpdate("Door is locked. You need to collect all keys to escape from here! \n Click to exit");
+                t.textUpdate("The door to outside is locked! You'll need to collect all the keys to escape from here!");
             }
-        
+
         }
     }
 }
