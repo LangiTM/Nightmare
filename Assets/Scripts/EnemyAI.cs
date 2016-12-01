@@ -52,6 +52,7 @@ public class EnemyAI : MonoBehaviour {
     void attackPlayer()
     {
         transform.position += transform.forward * Time.deltaTime * speed; //move towards (already facing) target
+        transform.Rotate(0.0f, 180.0f, 0.0f);
     }
 
     void OnCollisionEnter(Collision other)
@@ -61,9 +62,6 @@ public class EnemyAI : MonoBehaviour {
 
     void lookAtTarget()
     {
-//            if (transform.parent != null) //if has a parent
-//                transform.localRotation = Quaternion.LookRotation(target.transform.position - transform.position); //lookAt was looking away from
-//            else
-                transform.rotation = Quaternion.LookRotation(target.transform.position - transform.position);
+        transform.rotation = Quaternion.LookRotation(target.transform.position - transform.position);
     }
 }
