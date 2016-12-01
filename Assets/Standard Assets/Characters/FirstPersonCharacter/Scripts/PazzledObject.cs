@@ -18,14 +18,14 @@ public class PazzledObject : MonoBehaviour {
         TextController t = refg.GetComponent<TextController>();
 
         if (transform.name == "key_1")
-            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.key_1 = true;
+            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.WestHall_Key = true;
         else if (transform.name == "key_2")
         {
-            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.key_2 = true;
+            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.MusicRoom_Key = true;
         }
-        else if (transform.name == "key_3")
+        else if (transform.name == "RecRoom_Key")
         {
-            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.key_3 = true;
+            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.RecRoom_Key = true;
         }
 
         t.textUpdate("You've found a key!! Go open the door. \n Click to exit");

@@ -43,9 +43,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         /***************************************************
          * For storing the items player has
          * ************************************************/
-        public static Boolean key_1;
-        public static Boolean key_2;
-        public static Boolean key_3;
+        public static Boolean WestHall_Key;
+        public static Boolean MusicRoom_Key;
+        public static Boolean RecRoom_Key;
 
         GameObject refg;
         TextController t;
@@ -265,18 +265,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
             GameObject refg = GameObject.Find("TextController");
             TextController t=refg.GetComponent<TextController>();
 
-            if (collide.gameObject.name.Equals("DoorEntToWest") &&key_1||collide.gameObject.tag.Equals("Exit_Door")) {
+            if (collide.gameObject.name.Equals("DoorEntToWest") &&WestHall_Key||collide.gameObject.tag.Equals("Exit_Door")) {
                transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
             }
-            else if (collide.gameObject.name.Equals("DoorEntToWest") && !key_1)
+            else if (collide.gameObject.name.Equals("DoorEntToWest") && !WestHall_Key)
             {
                 t.textUpdate("Door is locked. You need key1 to open. Go find the key. \n Click to exit");
             }
-            else if (collide.gameObject.name.Equals("DoorWestToMus") && key_2)
+            else if (collide.gameObject.name.Equals("DoorWestToMus") && MusicRoom_Key)
             {
                 transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
             }
-            else if (collide.gameObject.name.Equals("DoorWestToMus") && !key_2)
+            else if (collide.gameObject.name.Equals("DoorWestToMus") && !MusicRoom_Key)
             {
                 t.textUpdate("Door is locked. You need key2 to open. Go find the key. \n Click to exit");
             }
@@ -285,7 +285,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Application.LoadLevel("MainFloor");
 
             }
-            else if (collide.gameObject.name.Equals("DoorEntToOutside") && !key_2)
+            else if (collide.gameObject.name.Equals("DoorEntToOutside") && !MusicRoom_Key)
             {
                 t.textUpdate("Door is locked. You need to collect all keys to escape from here! \n Click to exit");
             }

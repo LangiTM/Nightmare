@@ -29,13 +29,17 @@ public class TextController : MonoBehaviour
         String []keys=new String[6];
 
         //check the players status
-        if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.key_1)
+        if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.WestHall_Key)
         {
-            keys[0] = "\n        -Key1";
+            keys[0] = "\n        -West Hall Key";
         }
-        if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.key_2)
+        if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.MusicRoom_Key)
         {
-            keys[1] = "\n        -Key2";
+            keys[1] = "\n        -Music Room Key";
+        }
+        if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.RecRoom_Key)
+        {
+            keys[1] = "\n        -RecRoom Key";
         }
         String text="You have following key"+keys[0]+keys[1]+keys[2] + keys[3] + keys[4] + keys[5];
         condText.text = text;
