@@ -45,6 +45,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
          * ************************************************/
         public static Boolean key_1;
         public static Boolean key_2;
+        public static Boolean key_3;
 
         GameObject refg;
         TextController t;
