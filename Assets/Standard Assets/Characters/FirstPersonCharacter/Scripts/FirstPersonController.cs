@@ -51,6 +51,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
          * For storing player status
          * ************************************************/
         public Boolean inWardrobe;
+        public Boolean isPeeking;
 
         GameObject refg;
         TextController t;
@@ -74,6 +75,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             collides = GetComponent<Collider>();
             flashlight = GameObject.FindGameObjectWithTag("Flashlight").GetComponent<Light>();
             inWardrobe = false;
+            isPeeking = false;
         }
 
 
@@ -107,16 +109,35 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     if (!inWardrobe)
                         t.textUpdate("[Press E to Enter Wardrobe]");
                     else
-                        t.textUpdate("[Press E to Leave Wardrobe]");
+                        t.textUpdate("[Press E to Leave Wardrobe]\n[Press Q to Peek Out]");
                     float doorDistance;
                     if (!inWardrobe && Input.GetKeyDown(KeyCode.E))
                     {
                         t.textClear();
                         doorDistance = Vector3.Distance(transform.position, hitted.transform.position);
                         Debug.Log(doorDistance);
-                        //transform.Translate(Vector3.forward * (3 - doorDistance));
                         transform.Translate(Vector3.forward * (doorDistance));
                         inWardrobe = true;
+                    }
+                    else if (inWardrobe && Input.GetKeyDown(KeyCode.Q) && !isPeeking)
+                    {
+                        isPeeking = true;
+                        flashlight.enabled = false;
+                        t.textClear();
+                        GetComponentInChildren<Camera>().enabled = false;
+                        hitted.GetComponentInChildren<Camera>().enabled = true;
+                        t.textUpdate("[Press Q to Stop Peeking]");
+                        
+                    }
+                    else if (Input.GetKeyDown(KeyCode.Q) && isPeeking)
+                    {
+                        isPeeking = false;
+                        flashlight.enabled = true;
+                        t.textClear();
+                        hitted.GetComponentInChildren<Camera>().enabled = false;
+                        GetComponentInChildren<Camera>().enabled = true;
+                        t.textUpdate("[Press Q to Stop Peeking]");
+
                     }
                     else if (Input.GetKeyDown(KeyCode.E))
                     {
