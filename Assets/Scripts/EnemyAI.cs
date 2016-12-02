@@ -42,7 +42,6 @@ public class EnemyAI : MonoBehaviour
         }
         else if (targetDistance < attackRange && fpsc.inWardrobe)
         {
-            Debug.Log("Safe");
             lookAtTarget();
             leavePlayer();
         }
@@ -77,13 +76,20 @@ public class EnemyAI : MonoBehaviour
 
     void leavePlayer()
     {
-        transform.position -= transform.forward * Time.deltaTime * speed; //move towards (already facing) target
+        transform.position -= transform.forward * Time.deltaTime * speed/4; //move towards (already facing) target
         transform.Rotate(0.0f, 180.0f, 0.0f);
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnColliderEnter(Collider other)
     {
-        //action on reaching target
+        Debug.Log(other.gameObject.name);
+        if (other.gameObject.tag == "Player")
+        {
+            FirstPersonController.MusicRoom_Key = false;
+            FirstPersonController.RecRoom_Key = false;
+            FirstPersonController.WestHall_Key = false;
+            Application.LoadLevel("MainMenu");
+        }
     }
 
     void lookAtTarget()

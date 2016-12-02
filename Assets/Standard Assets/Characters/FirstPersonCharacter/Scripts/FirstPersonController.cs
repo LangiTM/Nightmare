@@ -90,21 +90,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (Physics.Raycast(ray, out hit, 3.0f))
             {
                 //get the object
-                
-                GameObject hitted= hit.collider.gameObject;
+
+                GameObject hitted = hit.collider.gameObject;
                 //Debug.Log(hitted.name);
                 //if the object is interactable (for instance Rock2) 
-                if (hitted.name == "key_1" || hitted.name == "key_2" || hitted.name == "key_3") 
+                if (hitted.name == "key_1" || hitted.name == "key_2" || hitted.name == "key_3")
                 {
                     PazzledObject po = hitted.GetComponent<PazzledObject>();
                     po.findKey();
                 }
-                else if (hitted.tag=="Riddle")//for reading a riddle
+                else if (hitted.tag == "Riddle")//for reading a riddle
                 {
                     Note no = hitted.GetComponent<Note>();
                     no.readNote();
                 }
-                else if (hitted.tag=="WardrobeDoor")
+                else if (hitted.tag == "WardrobeDoor")
                 {
                     if (!inWardrobe)
                         t.textUpdate("[Press E to Enter Wardrobe]");
@@ -127,7 +127,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         GetComponentInChildren<Camera>().enabled = false;
                         hitted.GetComponentInChildren<Camera>().enabled = true;
                         t.textUpdate("[Press Q to Stop Peeking]");
-                        
+
                     }
                     else if (Input.GetKeyDown(KeyCode.Q) && isPeeking)
                     {
@@ -159,9 +159,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (Input.GetMouseButtonDown(1))
                 t.condUpdate();
             //if (Input.GetMouseButtonDown(0))
-            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) {
                 t.textClear();
-          
+            }
              RotateView();
             // the jump state needs to read here to make sure it is not missed
            
@@ -311,6 +311,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
+
         //for entering the door 
         private void OnTriggerEnter(Collider collide) {
             GameObject refg = GameObject.Find("TextController");
@@ -347,6 +348,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
             else if (collide.gameObject.name.Equals("DoorEntToOutside") && !MusicRoom_Key)
             {
                 t.textUpdate("The door to outside is locked! You'll need to collect all the keys to escape from here!");
+            }
+            else if (collide.gameObject.tag.Equals("Enemy"))
+            {
+                MusicRoom_Key = false;
+                RecRoom_Key = false;
+                WestHall_Key = false;
+                Application.LoadLevel("DeathScreen");  
             }
 
         }
