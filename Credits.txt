@@ -1,6 +1,10 @@
 Audio
 -'The Abyss' from purpleplanetmusic
 
+Art Assets (Textures)
+	-From associated Google Warehouse item
+-From noctua-graphics [http://www.noctua-graphics.de/english/freetex_e.htm]
+
 Art Assets (Models)
 -All from Google 3D Warehouse
 	-Bar [Zane]
@@ -18,9 +22,11 @@ Art Assets (Models)
 	-Fireplace [jimbo101]
 	-Fork [W. Renckens]
 	-Knife [Ulf A.]
+	-Logs [sterfry]
 	-Piano + Piano Bench [Sketch Up Staff]
 	-Plate [Pie482]
 	-Pool Table [MIL Tech]
+	-Pot [Marty]
 	-Rocks [Intresto]
 	-Sofa [Daniel P.]
 	-Stacked Chairs [JAW Functional Sculptures]
@@ -28,3 +34,4 @@ Art Assets (Models)
 	-Stools [Zane]
 	-Vase [Jose Manuel]
 	-Wardrobe [Catherine.janney@tinlid.com]
+	-Wine bottle [Briggy]
