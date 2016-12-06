@@ -36,7 +36,7 @@ public class TextController : MonoBehaviour
     //for showing players current condition 
     public void condUpdate()
     {
-        String []keys=new String[6];
+        String []keys=new String[10];
 
         //check the players status
         if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.WestHall_Key)
@@ -50,6 +50,14 @@ public class TextController : MonoBehaviour
         if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.RecRoom_Key)
         {
             keys[3] = "\n        -RecRoom Key";
+        }
+        if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.MusEsc_Key)
+        {
+            keys[4] = "\n        -MusEsc Key";
+        }
+        if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.Dining_Key)
+        {
+            keys[5] = "\n        -DinningHall Key";
         }
         String text="You have following key"+keys[0]+keys[1]+keys[2] + keys[3] + keys[4] + keys[5];
         condText.text = text;

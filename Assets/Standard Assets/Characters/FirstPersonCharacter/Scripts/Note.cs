@@ -55,6 +55,10 @@ public class Note : MonoBehaviour
         {
             text = "A place setting appears to be missing at the able.\nIt may help to finish the job";
         }
+        else if (transform.name == "Riddle7")
+        {
+            text = "The old caretakers foolishly packed away the key.\nRumour has it that their souls still wander the room";
+        }
         t.textUpdate(text);
     }
 }

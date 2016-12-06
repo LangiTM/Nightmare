@@ -42,6 +42,10 @@ public class PazzledObject : MonoBehaviour {
         {
             UnityStandardAssets.Characters.FirstPerson.FirstPersonController.Dining_Key = true;
         }
+        else if (transform.name == "Crate (2)")
+        {
+            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.MusEsc_Key = true;
+        }
 
         t.textUpdate("You've found a key! I wonder what door it opens...");
 
