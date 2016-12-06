@@ -66,6 +66,11 @@ public class EnemyAI : MonoBehaviour
         }
         else if (targetDistance < viewRange && fpsc.inWardrobe)
         {
+            if (type.Equals("Shade"))
+            {
+                blurUI.GetComponent<SpriteRenderer>().enabled = false;
+                attackUI.GetComponent<SpriteRenderer>().enabled = false;
+            }
             lookAtTarget();
             leavePlayer();
         }
