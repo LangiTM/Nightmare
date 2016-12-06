@@ -399,6 +399,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 WestHall_Key = false;
                 Application.LoadLevel("DeathScreen");  
             }
+            else if (collide.gameObject.tag.Equals("Door")) {
+                transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
+            }
 
         }
         //for checking if all keys have been collected
