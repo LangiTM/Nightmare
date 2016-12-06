@@ -31,6 +31,14 @@ public class EnemyAI : MonoBehaviour
         {
             lookAtTarget();
             attackPlayer();
+
+            //warn player 
+            GameObject refg = GameObject.Find("TextController");
+            TextController t = refg.GetComponent<TextController>();
+
+            t.textUpdate("Enemy is close to you!!!!");
+
+
             //play attack sound
             //AudioSource.Stop();
             if (!hasAttackScreamed)
@@ -53,6 +61,8 @@ public class EnemyAI : MonoBehaviour
         else if (targetDistance < viewRange) //if can see target (player)
         {
             lookAtTarget();
+            
+
             //play warning clip
             if (!hasWarningGrowled)
             {

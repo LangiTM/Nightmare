@@ -10,7 +10,11 @@ public class PlayGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (transform.name.Equals("BackToMain"))
+        {
+            if (Input.GetMouseButtonDown(0))
+                Application.LoadLevel("MainMenu");
+        }
 	}
 
     void OnMouseDown()

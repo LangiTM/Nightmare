@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/**
+ * This script manages the messages to show when 
+ * player interact with Riddles. 
+ * When player interact with Riddles, this script
+ * decides which message to show based on Riddle's name.
+ * 
+ * Author: Team Nightmare
+ * */
+
+using UnityEngine;
 using System.Collections;
 
 public class Note : MonoBehaviour
@@ -37,6 +46,10 @@ public class Note : MonoBehaviour
         else if (transform.name == "Riddle4")
         {
             text = "Haha you fool. You're trapped in here for good.\nMight as well go enjoy a nice drink at the bar.";
+        }
+        else if (transform.name == "Riddle5")
+        {
+            text = "Want to escape? Too bad, you need to find keys. \nKeys are placed everywhere in this house.\nLook for the Riddles, it will help you";
         }
         t.textUpdate(text);
     }

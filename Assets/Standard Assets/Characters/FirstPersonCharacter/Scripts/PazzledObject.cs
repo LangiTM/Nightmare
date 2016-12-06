@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/**
+ * This script manages the object interaction. 
+ * This script is mainly attached with key objects.
+ * When player interact with keys, this script will 
+ * access to player information.
+ * 
+ * Author: Team Nightmare 
+ * */
+
+using UnityEngine;
 using System.Collections;
 
 public class PazzledObject : MonoBehaviour {

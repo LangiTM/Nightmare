@@ -1,3 +1,10 @@
+/**
+ * Script for managing our main character. 
+ * This script manages player's movement, object interaction, 
+ * and player's current information. 
+ * 
+ * Author: Imported from Unity Standard Assets. Modifided by team Nightmare 
+ * */
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
@@ -58,8 +65,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 
         // Use this for initialization
+        //Modifided by team Nightmare 
         private void Start()
         {
+            //get text controller for showing text 
             refg= GameObject.Find("TextController");
             t = refg.GetComponent<TextController>();
 
@@ -80,6 +89,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 
         // Update is called once per frame
+        //Modifided by team Nightmare 
         private void Update()
         {
 
@@ -87,7 +97,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             //find any object within a range of 1 step forward. 
-            if (Physics.Raycast(ray, out hit, 3.0f))
+            if (Physics.Raycast(ray, out hit, 2.0f))
             {
                 //get the object
 
@@ -104,6 +114,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     Note no = hitted.GetComponent<Note>();
                     no.readNote();
                 }
+                //for entering Wardrobe 
                 else if (hitted.tag == "WardrobeDoor")
                 {
                     if (!inWardrobe)
@@ -111,6 +122,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     else
                         t.textUpdate("[Press E to Leave Wardrobe]\n[Press Q to Peek Out]");
                     float doorDistance;
+                    //for getting in to wardrobe 
                     if (!inWardrobe && Input.GetKeyDown(KeyCode.E))
                     {
                         t.textClear();
@@ -119,6 +131,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         transform.Translate(Vector3.forward * (doorDistance));
                         inWardrobe = true;
                     }
+                    //for peeking
                     else if (inWardrobe && Input.GetKeyDown(KeyCode.Q) && !isPeeking)
                     {
                         isPeeking = true;
@@ -129,6 +142,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         t.textUpdate("[Press Q to Stop Peeking]");
 
                     }
+                    //stop peeking 
                     else if (Input.GetKeyDown(KeyCode.Q) && isPeeking)
                     {
                         isPeeking = false;
@@ -139,6 +153,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                         t.textUpdate("[Press Q to Stop Peeking]");
 
                     }
+                    //get out from wardrobe 
                     else if (Input.GetKeyDown(KeyCode.E))
                     {
                         t.textClear();
@@ -147,7 +162,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     }
                 }
             }
-
+            //for changing the flashlight intensity 
             if (Input.GetKeyDown(KeyCode.F)) {
                 if (flashlight.intensity == 3)
                     flashlight.intensity = 0;
@@ -313,6 +328,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         }
 
         //for entering the door 
+        //Added by team Nightmare 
         private void OnTriggerEnter(Collider collide) {
             GameObject refg = GameObject.Find("TextController");
             TextController t=refg.GetComponent<TextController>();
@@ -345,11 +361,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Application.LoadLevel("MainFloor");
 
             }
-            else if (collide.gameObject.name.Equals("DoorEntToOutside") && !MusicRoom_Key)
+            //if all keys have been collected 
+
+            else if (collide.gameObject.name.Equals("MainDoor") && isCollected())
             {
-                t.textUpdate("The door to outside is locked! You'll need to collect all the keys to escape from here!");
+                Application.LoadLevel("Ending");
             }
-            else if (collide.gameObject.tag.Equals("Enemy"))
+            //check to see if all key has been collected 
+            else if (collide.gameObject.name.Equals("MainDoor") && !isCollected())
+            {
+                t.textUpdate("The door to outside is locked! \nYou'll need to collect all the keys to escape from here!");
+            }
+           
+            else if (collide.gameObject.tag.Equals("Enemy")) //when enemy attacked player 
             {
                 MusicRoom_Key = false;
                 RecRoom_Key = false;
@@ -357,6 +381,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Application.LoadLevel("DeathScreen");  
             }
 
+        }
+        //for checking if all key has been collected
+        private Boolean isCollected()
+        {
+            if (WestHall_Key && MusicRoom_Key && RecRoom_Key)
+            {
+                return true;
+            }
+            else
+                return false;
         }
     }
 }

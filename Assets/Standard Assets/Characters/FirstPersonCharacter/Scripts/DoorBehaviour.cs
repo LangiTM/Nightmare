@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/**
+ * Script for managing door behaviour.
+ * When this script gets called, it will transform player to
+ * corresponding door. 
+ * 
+ * Author: Team Nightmare
+ * */
+using UnityEngine;
 using System.Collections;
 
 public class DoorBehaviour : MonoBehaviour {
