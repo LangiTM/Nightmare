@@ -42,7 +42,7 @@ public class EnemyAI : MonoBehaviour
             //            TextController t = refg.GetComponent<TextController>();
 
             //            t.textUpdate("Enemy is close to you!!!!");
-            if (type.Equals("Shade"))
+            if (type.StartsWith("Shade"))
             {
                 blurUI.GetComponent<SpriteRenderer>().enabled = false;
                 attackUI.GetComponent<SpriteRenderer>().enabled = true;
@@ -66,7 +66,7 @@ public class EnemyAI : MonoBehaviour
         }
         else if (targetDistance < viewRange && fpsc.inWardrobe)
         {
-            if (type.Equals("Shade"))
+            if (type.StartsWith("Shade"))
             {
                 blurUI.GetComponent<SpriteRenderer>().enabled = false;
                 attackUI.GetComponent<SpriteRenderer>().enabled = false;
@@ -77,7 +77,7 @@ public class EnemyAI : MonoBehaviour
         else if (targetDistance < viewRange) //if can see target (player)
         {
             lookAtTarget();
-            if (type.Equals("Shade"))
+            if (type.StartsWith("Shade"))
             {
                 attackUI.GetComponent<SpriteRenderer>().enabled = false;
                 blurUI.GetComponent<SpriteRenderer>().enabled = true;
@@ -95,7 +95,7 @@ public class EnemyAI : MonoBehaviour
         {
             hasWarningGrowled = false;
             hasAttackScreamed = false;
-            if (type.Equals("Shade"))
+            if (type.StartsWith("Shade"))
             {
                 blurUI.GetComponent<SpriteRenderer>().enabled = false;
                 attackUI.GetComponent<SpriteRenderer>().enabled = false;
