@@ -8,6 +8,7 @@ Art Assets (Textures)
 Art Assets (Models)
 -All from Google 3D Warehouse
 	-Bar [Zane]
+	-Barrel [Perron]
 	-Bar Tables [derekmartin81]
 	-Bookshelf [Erica]
 	-Candle holder [Cealpup]
@@ -21,6 +22,7 @@ Art Assets (Models)
 	-End Table [Sketch Up Staff]
 	-Fireplace [jimbo101]
 	-Fork [W. Renckens]
+	-Grain Sack [Ian W.]
 	-Knife [Ulf A.]
 	-Logs [sterfry]
 	-Piano + Piano Bench [Sketch Up Staff]
@@ -28,6 +30,7 @@ Art Assets (Models)
 	-Pool Table [MIL Tech]
 	-Pot [Marty]
 	-Rocks [Intresto]
+	-Shelf [berlyn]
 	-Sofa [Daniel P.]
 	-Stacked Chairs [JAW Functional Sculptures]
 	-Staircase [cupitor88]
