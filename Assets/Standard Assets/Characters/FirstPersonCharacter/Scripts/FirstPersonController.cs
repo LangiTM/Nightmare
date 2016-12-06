@@ -382,7 +382,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
         }
-        //for checking if all key has been collected
+        //for checking if all keys have been collected
         private Boolean isCollected()
         {
             if (WestHall_Key && MusicRoom_Key && RecRoom_Key)

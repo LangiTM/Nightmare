@@ -15,12 +15,17 @@ public class EnemyAI : MonoBehaviour
     private bool hasWarningGrowled = false;
     private bool hasAttackScreamed = false;
     private FirstPersonController fpsc;
+    private GameObject blurUI, attackUI;
+    private string type;
 
     // Use this for initialization
     void Start()
     {
         target = GameObject.Find("FPSController");
         fpsc = target.GetComponent<FirstPersonController>();
+        blurUI = GameObject.Find("blurWarning");
+        attackUI = GameObject.Find("blurAttack");
+        type = transform.parent.name;
     }
 
     // Update is called once per frame
@@ -33,10 +38,16 @@ public class EnemyAI : MonoBehaviour
             attackPlayer();
 
             //warn player 
-            GameObject refg = GameObject.Find("TextController");
-            TextController t = refg.GetComponent<TextController>();
+            //            GameObject refg = GameObject.Find("TextController");
+            //            TextController t = refg.GetComponent<TextController>();
 
-            t.textUpdate("Enemy is close to you!!!!");
+            //            t.textUpdate("Enemy is close to you!!!!");
+            if (type.Equals("Shade"))
+            {
+                blurUI.GetComponent<SpriteRenderer>().enabled = false;
+                attackUI.GetComponent<SpriteRenderer>().enabled = true;
+            }
+
 
 
             //play attack sound
@@ -61,7 +72,11 @@ public class EnemyAI : MonoBehaviour
         else if (targetDistance < viewRange) //if can see target (player)
         {
             lookAtTarget();
-            
+            if (type.Equals("Shade"))
+            {
+                attackUI.GetComponent<SpriteRenderer>().enabled = false;
+                blurUI.GetComponent<SpriteRenderer>().enabled = true;
+            }
 
             //play warning clip
             if (!hasWarningGrowled)
@@ -75,6 +90,11 @@ public class EnemyAI : MonoBehaviour
         {
             hasWarningGrowled = false;
             hasAttackScreamed = false;
+            if (type.Equals("Shade"))
+            {
+                blurUI.GetComponent<SpriteRenderer>().enabled = false;
+                attackUI.GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
     }
 
