@@ -59,6 +59,10 @@ public class Note : MonoBehaviour
         {
             text = "The old caretakers foolishly packed away the key.\nRumour has it that their souls still wander the room";
         }
+        else if (transform.name == "Riddle8")
+        {
+            text = "Clean out the pots before entering the pantry";
+        }
         t.textUpdate(text);
     }
 }

@@ -46,6 +46,10 @@ public class PazzledObject : MonoBehaviour {
         {
             UnityStandardAssets.Characters.FirstPerson.FirstPersonController.MusEsc_Key = true;
         }
+        else if (transform.name == "Pot (6)")
+        {
+            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.Pantry_Key = true;
+        }
 
         t.textUpdate("You've found a key! I wonder what door it opens...");
 

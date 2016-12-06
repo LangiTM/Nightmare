@@ -55,6 +55,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public static Boolean RecRoom_Key;
         public static Boolean Dining_Key;
         public static Boolean MusEsc_Key;
+        public static Boolean Pantry_Key;
 
         /***************************************************
          * For storing player status
@@ -107,7 +108,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 //Debug.Log(hitted.name);
                 //if the object is interactable (for instance Rock2) 
                 if (hitted.name == "key_1" || hitted.name == "key_2" || hitted.name == "key_3" || hitted.name == "ChinaCabinet"
-                    || hitted.name == "Crate (2)")
+                    || hitted.name == "Crate (2)" || hitted.name == "Pot (6)")
                 {
                     PazzledObject po = hitted.GetComponent<PazzledObject>();
                     po.findKey();
@@ -359,6 +360,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 t.textUpdate("The door locked behind you!");
             }
+            else if (collide.gameObject.name.Equals("DoorKitToPan") && Pantry_Key)
+            {
+                transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
+            }
+            else if (collide.gameObject.name.Equals("DoorKitToPan") && !Pantry_Key)
+            {
+                t.textUpdate("The door to the pantry is locked!");
+            }
             else if (collide.gameObject.name.Equals("DoorMusToWest") && MusEsc_Key)
             {
                 transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
@@ -407,7 +416,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         //for checking if all keys have been collected
         private Boolean isCollected()
         {
-            if (WestHall_Key && MusicRoom_Key && RecRoom_Key && Dining_Key && MusEsc_Key)
+            if (WestHall_Key && MusicRoom_Key && RecRoom_Key && Dining_Key && MusEsc_Key && Pantry_Key)
             {
                 return true;
             }
