@@ -164,10 +164,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             //for changing the flashlight intensity 
             if (Input.GetKeyDown(KeyCode.F)) {
-                if (flashlight.intensity == 3)
-                    flashlight.intensity = 0;
-                else
+                if (flashlight.intensity == 0)
                     flashlight.intensity = 3;
+                else
+                    flashlight.intensity = 0;
             }
 
             //for clearing the text pop up

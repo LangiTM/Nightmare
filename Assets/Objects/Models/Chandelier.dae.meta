@@ -1,0 +1,1874 @@
+fileFormatVersion: 2
+guid: c4f6bf727141a0348845e2e8446a9a48
+timeCreated: 1481047941
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chain_part
+    100002: Chain_part 1
+    100004: Chain_part 10
+    100006: Chain_part 100
+    100008: Chain_part 101
+    100010: Chain_part 102
+    100012: Chain_part 103
+    100014: Chain_part 104
+    100016: Chain_part 105
+    100018: Chain_part 106
+    100020: Chain_part 107
+    100022: Chain_part 108
+    100024: Chain_part 109
+    100026: Chain_part 11
+    100028: Chain_part 110
+    100030: Chain_part 111
+    100032: Chain_part 112
+    100034: Chain_part 113
+    100036: Chain_part 114
+    100038: Chain_part 115
+    100040: Chain_part 116
+    100042: Chain_part 117
+    100044: Chain_part 118
+    100046: Chain_part 119
+    100048: Chain_part 12
+    100050: Chain_part 120
+    100052: Chain_part 121
+    100054: Chain_part 122
+    100056: Chain_part 123
+    100058: Chain_part 124
+    100060: Chain_part 125
+    100062: Chain_part 126
+    100064: Chain_part 127
+    100066: Chain_part 128
+    100068: Chain_part 129
+    100070: Chain_part 13
+    100072: Chain_part 130
+    100074: Chain_part 131
+    100076: Chain_part 132
+    100078: Chain_part 133
+    100080: Chain_part 134
+    100082: Chain_part 135
+    100084: Chain_part 136
+    100086: Chain_part 137
+    100088: Chain_part 138
+    100090: Chain_part 139
+    100092: Chain_part 14
+    100094: Chain_part 140
+    100096: Chain_part 141
+    100098: Chain_part 142
+    100100: Chain_part 143
+    100102: Chain_part 144
+    100104: Chain_part 145
+    100106: Chain_part 146
+    100108: Chain_part 147
+    100110: Chain_part 148
+    100112: Chain_part 149
+    100114: Chain_part 15
+    100116: Chain_part 150
+    100118: Chain_part 151
+    100120: Chain_part 16
+    100122: Chain_part 17
+    100124: Chain_part 18
+    100126: Chain_part 19
+    100128: Chain_part 2
+    100130: Chain_part 20
+    100132: Chain_part 21
+    100134: Chain_part 22
+    100136: Chain_part 23
+    100138: Chain_part 24
+    100140: Chain_part 25
+    100142: Chain_part 26
+    100144: Chain_part 27
+    100146: Chain_part 28
+    100148: Chain_part 29
+    100150: Chain_part 3
+    100152: Chain_part 30
+    100154: Chain_part 31
+    100156: Chain_part 32
+    100158: Chain_part 33
+    100160: Chain_part 34
+    100162: Chain_part 35
+    100164: Chain_part 36
+    100166: Chain_part 37
+    100168: Chain_part 38
+    100170: Chain_part 39
+    100172: Chain_part 4
+    100174: Chain_part 40
+    100176: Chain_part 41
+    100178: Chain_part 42
+    100180: Chain_part 43
+    100182: Chain_part 44
+    100184: Chain_part 45
+    100186: Chain_part 46
+    100188: Chain_part 47
+    100190: Chain_part 48
+    100192: Chain_part 49
+    100194: Chain_part 5
+    100196: Chain_part 50
+    100198: Chain_part 51
+    100200: Chain_part 52
+    100202: Chain_part 53
+    100204: Chain_part 54
+    100206: Chain_part 55
+    100208: Chain_part 56
+    100210: Chain_part 57
+    100212: Chain_part 58
+    100214: Chain_part 59
+    100216: Chain_part 6
+    100218: Chain_part 60
+    100220: Chain_part 61
+    100222: Chain_part 62
+    100224: Chain_part 63
+    100226: Chain_part 64
+    100228: Chain_part 65
+    100230: Chain_part 66
+    100232: Chain_part 67
+    100234: Chain_part 68
+    100236: Chain_part 69
+    100238: Chain_part 7
+    100240: Chain_part 70
+    100242: Chain_part 71
+    100244: Chain_part 72
+    100246: Chain_part 73
+    100248: Chain_part 74
+    100250: Chain_part 75
+    100252: Chain_part 76
+    100254: Chain_part 77
+    100256: Chain_part 78
+    100258: Chain_part 79
+    100260: Chain_part 8
+    100262: Chain_part 80
+    100264: Chain_part 81
+    100266: Chain_part 82
+    100268: Chain_part 83
+    100270: Chain_part 84
+    100272: Chain_part 85
+    100274: Chain_part 86
+    100276: Chain_part 87
+    100278: Chain_part 88
+    100280: Chain_part 89
+    100282: Chain_part 9
+    100284: Chain_part 90
+    100286: Chain_part 91
+    100288: Chain_part 92
+    100290: Chain_part 93
+    100292: Chain_part 94
+    100294: Chain_part 95
+    100296: Chain_part 96
+    100298: Chain_part 97
+    100300: Chain_part 98
+    100302: Chain_part 99
+    100304: chain_sex2
+    100306: flame
+    100308: flame 1
+    100310: flame 2
+    100312: flame 3
+    100314: flame 4
+    100316: flame 5
+    100318: group_0
+    100320: group_1
+    100322: group_1 1
+    100324: group_1 2
+    100326: group_1 3
+    100328: group_1 4
+    100330: group_1 5
+    100332: group_2
+    100334: group_2 1
+    100336: group_2 2
+    100338: group_2 3
+    100340: group_2 4
+    100342: group_2 5
+    100344: group_3
+    100346: group_3 1
+    100348: group_3 2
+    100350: group_3 3
+    100352: group_3 4
+    100354: group_3 5
+    100356: Group_4
+    100358: group_4
+    100360: Group_4 1
+    100362: Group_4 2
+    100364: Group_4 3
+    100366: Group_4 4
+    100368: Group_4 5
+    100370: Group_5
+    100372: group_5
+    100374: Group_7
+    100376: Group_7 1
+    100378: Group_7 2
+    100380: Group_7 3
+    100382: Group_7 4
+    100384: Group_7 5
+    100386: ID110
+    100388: ID116
+    100390: ID122
+    100392: ID128
+    100394: ID134
+    100396: ID140
+    100398: ID165
+    100400: ID165 1
+    100402: ID165 2
+    100404: ID165 3
+    100406: ID165 4
+    100408: ID165 5
+    100410: ID173
+    100412: ID173 1
+    100414: ID173 2
+    100416: ID173 3
+    100418: ID173 4
+    100420: ID173 5
+    100422: ID179
+    100424: ID179 1
+    100426: ID179 2
+    100428: ID179 3
+    100430: ID179 4
+    100432: ID179 5
+    100434: ID187
+    100436: ID187 1
+    100438: ID187 2
+    100440: ID187 3
+    100442: ID187 4
+    100444: ID187 5
+    100446: ID193
+    100448: ID193 1
+    100450: ID193 2
+    100452: ID193 3
+    100454: ID193 4
+    100456: ID193 5
+    100458: ID199
+    100460: ID199 1
+    100462: ID199 2
+    100464: ID199 3
+    100466: ID199 4
+    100468: ID199 5
+    100470: ID205
+    100472: ID205 1
+    100474: ID205 2
+    100476: ID205 3
+    100478: ID205 4
+    100480: ID205 5
+    100482: ID211
+    100484: ID211 1
+    100486: ID211 2
+    100488: ID211 3
+    100490: ID211 4
+    100492: ID211 5
+    100494: ID217
+    100496: ID217 1
+    100498: ID217 2
+    100500: ID217 3
+    100502: ID217 4
+    100504: ID217 5
+    100506: ID223
+    100508: ID223 1
+    100510: ID223 2
+    100512: ID223 3
+    100514: ID223 4
+    100516: ID223 5
+    100518: ID49
+    100520: ID49 1
+    100522: ID49 2
+    100524: ID49 3
+    100526: ID49 4
+    100528: ID49 5
+    100530: ID55
+    100532: ID55 1
+    100534: ID55 2
+    100536: ID55 3
+    100538: ID55 4
+    100540: ID55 5
+    100542: ID70
+    100544: ID70 1
+    100546: ID70 2
+    100548: ID70 3
+    100550: ID70 4
+    100552: ID70 5
+    100554: ID78
+    100556: ID78 1
+    100558: ID78 2
+    100560: ID78 3
+    100562: ID78 4
+    100564: ID78 5
+    100566: ID86
+    100568: ID86 1
+    100570: ID86 2
+    100572: ID86 3
+    100574: ID86 4
+    100576: ID86 5
+    100578: ID92
+    100580: ID92 1
+    100582: ID92 2
+    100584: ID92 3
+    100586: ID92 4
+    100588: ID92 5
+    100590: instance_0
+    100592: instance_1
+    100594: instance_1 1
+    100596: instance_10
+    100598: instance_10 1
+    100600: instance_10 2
+    100602: instance_10 3
+    100604: instance_10 4
+    100606: instance_10 5
+    100608: instance_11
+    100610: instance_11 1
+    100612: instance_11 2
+    100614: instance_11 3
+    100616: instance_11 4
+    100618: instance_11 5
+    100620: instance_12
+    100622: instance_12 1
+    100624: instance_12 2
+    100626: instance_12 3
+    100628: instance_12 4
+    100630: instance_12 5
+    100632: instance_13
+    100634: instance_13 1
+    100636: instance_13 2
+    100638: instance_13 3
+    100640: instance_13 4
+    100642: instance_13 5
+    100644: instance_14
+    100646: instance_14 1
+    100648: instance_14 2
+    100650: instance_14 3
+    100652: instance_14 4
+    100654: instance_14 5
+    100656: instance_15
+    100658: instance_15 1
+    100660: instance_16
+    100662: instance_17
+    100664: instance_18
+    100666: instance_19
+    100668: instance_2
+    100670: instance_2 1
+    100672: instance_2 2
+    100674: instance_2 3
+    100676: instance_2 4
+    100678: instance_2 5
+    100680: instance_20
+    100682: instance_21
+    100684: instance_22
+    100686: instance_23
+    100688: instance_24
+    100690: instance_25
+    100692: instance_26
+    100694: instance_27
+    100696: instance_28
+    100698: instance_29
+    100700: instance_3
+    100702: instance_3 1
+    100704: instance_3 10
+    100706: instance_3 11
+    100708: instance_3 12
+    100710: instance_3 13
+    100712: instance_3 14
+    100714: instance_3 15
+    100716: instance_3 16
+    100718: instance_3 17
+    100720: instance_3 18
+    100722: instance_3 19
+    100724: instance_3 2
+    100726: instance_3 20
+    100728: instance_3 21
+    100730: instance_3 22
+    100732: instance_3 23
+    100734: instance_3 24
+    100736: instance_3 25
+    100738: instance_3 26
+    100740: instance_3 27
+    100742: instance_3 28
+    100744: instance_3 29
+    100746: instance_3 3
+    100748: instance_3 30
+    100750: instance_3 31
+    100752: instance_3 32
+    100754: instance_3 33
+    100756: instance_3 34
+    100758: instance_3 35
+    100760: instance_3 36
+    100762: instance_3 37
+    100764: instance_3 38
+    100766: instance_3 39
+    100768: instance_3 4
+    100770: instance_3 40
+    100772: instance_3 41
+    100774: instance_3 42
+    100776: instance_3 43
+    100778: instance_3 44
+    100780: instance_3 45
+    100782: instance_3 46
+    100784: instance_3 47
+    100786: instance_3 48
+    100788: instance_3 49
+    100790: instance_3 5
+    100792: instance_3 50
+    100794: instance_3 51
+    100796: instance_3 52
+    100798: instance_3 53
+    100800: instance_3 54
+    100802: instance_3 55
+    100804: instance_3 56
+    100806: instance_3 57
+    100808: instance_3 58
+    100810: instance_3 59
+    100812: instance_3 6
+    100814: instance_3 60
+    100816: instance_3 61
+    100818: instance_3 62
+    100820: instance_3 63
+    100822: instance_3 64
+    100824: instance_3 65
+    100826: instance_3 66
+    100828: instance_3 67
+    100830: instance_3 68
+    100832: instance_3 69
+    100834: instance_3 7
+    100836: instance_3 70
+    100838: instance_3 71
+    100840: instance_3 72
+    100842: instance_3 73
+    100844: instance_3 74
+    100846: instance_3 75
+    100848: instance_3 8
+    100850: instance_3 9
+    100852: instance_30
+    100854: instance_31
+    100856: instance_32
+    100858: instance_33
+    100860: instance_34
+    100862: instance_35
+    100864: instance_36
+    100866: instance_37
+    100868: instance_38
+    100870: instance_39
+    100872: instance_4
+    100874: instance_4 1
+    100876: instance_4 10
+    100878: instance_4 11
+    100880: instance_4 12
+    100882: instance_4 13
+    100884: instance_4 14
+    100886: instance_4 15
+    100888: instance_4 16
+    100890: instance_4 17
+    100892: instance_4 18
+    100894: instance_4 19
+    100896: instance_4 2
+    100898: instance_4 20
+    100900: instance_4 21
+    100902: instance_4 22
+    100904: instance_4 23
+    100906: instance_4 24
+    100908: instance_4 25
+    100910: instance_4 26
+    100912: instance_4 27
+    100914: instance_4 28
+    100916: instance_4 29
+    100918: instance_4 3
+    100920: instance_4 30
+    100922: instance_4 31
+    100924: instance_4 32
+    100926: instance_4 33
+    100928: instance_4 34
+    100930: instance_4 35
+    100932: instance_4 36
+    100934: instance_4 37
+    100936: instance_4 38
+    100938: instance_4 39
+    100940: instance_4 4
+    100942: instance_4 40
+    100944: instance_4 41
+    100946: instance_4 42
+    100948: instance_4 43
+    100950: instance_4 44
+    100952: instance_4 45
+    100954: instance_4 46
+    100956: instance_4 47
+    100958: instance_4 48
+    100960: instance_4 49
+    100962: instance_4 5
+    100964: instance_4 50
+    100966: instance_4 51
+    100968: instance_4 52
+    100970: instance_4 53
+    100972: instance_4 54
+    100974: instance_4 55
+    100976: instance_4 56
+    100978: instance_4 57
+    100980: instance_4 58
+    100982: instance_4 59
+    100984: instance_4 6
+    100986: instance_4 60
+    100988: instance_4 61
+    100990: instance_4 62
+    100992: instance_4 63
+    100994: instance_4 64
+    100996: instance_4 65
+    100998: instance_4 66
+    101000: instance_4 67
+    101002: instance_4 68
+    101004: instance_4 69
+    101006: instance_4 7
+    101008: instance_4 70
+    101010: instance_4 71
+    101012: instance_4 72
+    101014: instance_4 73
+    101016: instance_4 74
+    101018: instance_4 75
+    101020: instance_4 8
+    101022: instance_4 9
+    101024: instance_40
+    101026: instance_5
+    101028: instance_5 1
+    101030: instance_5 2
+    101032: instance_5 3
+    101034: instance_5 4
+    101036: instance_5 5
+    101038: instance_6
+    101040: instance_6 1
+    101042: instance_6 2
+    101044: instance_6 3
+    101046: instance_6 4
+    101048: instance_6 5
+    101050: instance_7
+    101052: instance_7 1
+    101054: instance_7 2
+    101056: instance_7 3
+    101058: instance_7 4
+    101060: instance_7 5
+    101062: instance_8
+    101064: instance_8 1
+    101066: instance_8 2
+    101068: instance_8 3
+    101070: instance_8 4
+    101072: instance_8 5
+    101074: instance_9
+    101076: instance_9 1
+    101078: instance_9 2
+    101080: instance_9 3
+    101082: instance_9 4
+    101084: instance_9 5
+    101086: Last Saved SketchUp View
+    101088: //RootNode
+    101090: Two_chain_parts
+    101092: Two_chain_parts 1
+    101094: Two_chain_parts 10
+    101096: Two_chain_parts 11
+    101098: Two_chain_parts 12
+    101100: Two_chain_parts 13
+    101102: Two_chain_parts 14
+    101104: Two_chain_parts 15
+    101106: Two_chain_parts 16
+    101108: Two_chain_parts 17
+    101110: Two_chain_parts 18
+    101112: Two_chain_parts 19
+    101114: Two_chain_parts 2
+    101116: Two_chain_parts 20
+    101118: Two_chain_parts 21
+    101120: Two_chain_parts 22
+    101122: Two_chain_parts 23
+    101124: Two_chain_parts 24
+    101126: Two_chain_parts 25
+    101128: Two_chain_parts 26
+    101130: Two_chain_parts 27
+    101132: Two_chain_parts 28
+    101134: Two_chain_parts 29
+    101136: Two_chain_parts 3
+    101138: Two_chain_parts 30
+    101140: Two_chain_parts 31
+    101142: Two_chain_parts 32
+    101144: Two_chain_parts 33
+    101146: Two_chain_parts 34
+    101148: Two_chain_parts 35
+    101150: Two_chain_parts 36
+    101152: Two_chain_parts 37
+    101154: Two_chain_parts 38
+    101156: Two_chain_parts 39
+    101158: Two_chain_parts 4
+    101160: Two_chain_parts 40
+    101162: Two_chain_parts 41
+    101164: Two_chain_parts 42
+    101166: Two_chain_parts 43
+    101168: Two_chain_parts 44
+    101170: Two_chain_parts 45
+    101172: Two_chain_parts 46
+    101174: Two_chain_parts 47
+    101176: Two_chain_parts 48
+    101178: Two_chain_parts 49
+    101180: Two_chain_parts 5
+    101182: Two_chain_parts 50
+    101184: Two_chain_parts 51
+    101186: Two_chain_parts 52
+    101188: Two_chain_parts 53
+    101190: Two_chain_parts 54
+    101192: Two_chain_parts 55
+    101194: Two_chain_parts 56
+    101196: Two_chain_parts 57
+    101198: Two_chain_parts 58
+    101200: Two_chain_parts 59
+    101202: Two_chain_parts 6
+    101204: Two_chain_parts 60
+    101206: Two_chain_parts 61
+    101208: Two_chain_parts 62
+    101210: Two_chain_parts 63
+    101212: Two_chain_parts 64
+    101214: Two_chain_parts 65
+    101216: Two_chain_parts 66
+    101218: Two_chain_parts 67
+    101220: Two_chain_parts 68
+    101222: Two_chain_parts 69
+    101224: Two_chain_parts 7
+    101226: Two_chain_parts 70
+    101228: Two_chain_parts 71
+    101230: Two_chain_parts 72
+    101232: Two_chain_parts 73
+    101234: Two_chain_parts 74
+    101236: Two_chain_parts 75
+    101238: Two_chain_parts 8
+    101240: Two_chain_parts 9
+    400000: Chain_part
+    400002: Chain_part 1
+    400004: Chain_part 10
+    400006: Chain_part 100
+    400008: Chain_part 101
+    400010: Chain_part 102
+    400012: Chain_part 103
+    400014: Chain_part 104
+    400016: Chain_part 105
+    400018: Chain_part 106
+    400020: Chain_part 107
+    400022: Chain_part 108
+    400024: Chain_part 109
+    400026: Chain_part 11
+    400028: Chain_part 110
+    400030: Chain_part 111
+    400032: Chain_part 112
+    400034: Chain_part 113
+    400036: Chain_part 114
+    400038: Chain_part 115
+    400040: Chain_part 116
+    400042: Chain_part 117
+    400044: Chain_part 118
+    400046: Chain_part 119
+    400048: Chain_part 12
+    400050: Chain_part 120
+    400052: Chain_part 121
+    400054: Chain_part 122
+    400056: Chain_part 123
+    400058: Chain_part 124
+    400060: Chain_part 125
+    400062: Chain_part 126
+    400064: Chain_part 127
+    400066: Chain_part 128
+    400068: Chain_part 129
+    400070: Chain_part 13
+    400072: Chain_part 130
+    400074: Chain_part 131
+    400076: Chain_part 132
+    400078: Chain_part 133
+    400080: Chain_part 134
+    400082: Chain_part 135
+    400084: Chain_part 136
+    400086: Chain_part 137
+    400088: Chain_part 138
+    400090: Chain_part 139
+    400092: Chain_part 14
+    400094: Chain_part 140
+    400096: Chain_part 141
+    400098: Chain_part 142
+    400100: Chain_part 143
+    400102: Chain_part 144
+    400104: Chain_part 145
+    400106: Chain_part 146
+    400108: Chain_part 147
+    400110: Chain_part 148
+    400112: Chain_part 149
+    400114: Chain_part 15
+    400116: Chain_part 150
+    400118: Chain_part 151
+    400120: Chain_part 16
+    400122: Chain_part 17
+    400124: Chain_part 18
+    400126: Chain_part 19
+    400128: Chain_part 2
+    400130: Chain_part 20
+    400132: Chain_part 21
+    400134: Chain_part 22
+    400136: Chain_part 23
+    400138: Chain_part 24
+    400140: Chain_part 25
+    400142: Chain_part 26
+    400144: Chain_part 27
+    400146: Chain_part 28
+    400148: Chain_part 29
+    400150: Chain_part 3
+    400152: Chain_part 30
+    400154: Chain_part 31
+    400156: Chain_part 32
+    400158: Chain_part 33
+    400160: Chain_part 34
+    400162: Chain_part 35
+    400164: Chain_part 36
+    400166: Chain_part 37
+    400168: Chain_part 38
+    400170: Chain_part 39
+    400172: Chain_part 4
+    400174: Chain_part 40
+    400176: Chain_part 41
+    400178: Chain_part 42
+    400180: Chain_part 43
+    400182: Chain_part 44
+    400184: Chain_part 45
+    400186: Chain_part 46
+    400188: Chain_part 47
+    400190: Chain_part 48
+    400192: Chain_part 49
+    400194: Chain_part 5
+    400196: Chain_part 50
+    400198: Chain_part 51
+    400200: Chain_part 52
+    400202: Chain_part 53
+    400204: Chain_part 54
+    400206: Chain_part 55
+    400208: Chain_part 56
+    400210: Chain_part 57
+    400212: Chain_part 58
+    400214: Chain_part 59
+    400216: Chain_part 6
+    400218: Chain_part 60
+    400220: Chain_part 61
+    400222: Chain_part 62
+    400224: Chain_part 63
+    400226: Chain_part 64
+    400228: Chain_part 65
+    400230: Chain_part 66
+    400232: Chain_part 67
+    400234: Chain_part 68
+    400236: Chain_part 69
+    400238: Chain_part 7
+    400240: Chain_part 70
+    400242: Chain_part 71
+    400244: Chain_part 72
+    400246: Chain_part 73
+    400248: Chain_part 74
+    400250: Chain_part 75
+    400252: Chain_part 76
+    400254: Chain_part 77
+    400256: Chain_part 78
+    400258: Chain_part 79
+    400260: Chain_part 8
+    400262: Chain_part 80
+    400264: Chain_part 81
+    400266: Chain_part 82
+    400268: Chain_part 83
+    400270: Chain_part 84
+    400272: Chain_part 85
+    400274: Chain_part 86
+    400276: Chain_part 87
+    400278: Chain_part 88
+    400280: Chain_part 89
+    400282: Chain_part 9
+    400284: Chain_part 90
+    400286: Chain_part 91
+    400288: Chain_part 92
+    400290: Chain_part 93
+    400292: Chain_part 94
+    400294: Chain_part 95
+    400296: Chain_part 96
+    400298: Chain_part 97
+    400300: Chain_part 98
+    400302: Chain_part 99
+    400304: chain_sex2
+    400306: flame
+    400308: flame 1
+    400310: flame 2
+    400312: flame 3
+    400314: flame 4
+    400316: flame 5
+    400318: group_0
+    400320: group_1
+    400322: group_1 1
+    400324: group_1 2
+    400326: group_1 3
+    400328: group_1 4
+    400330: group_1 5
+    400332: group_2
+    400334: group_2 1
+    400336: group_2 2
+    400338: group_2 3
+    400340: group_2 4
+    400342: group_2 5
+    400344: group_3
+    400346: group_3 1
+    400348: group_3 2
+    400350: group_3 3
+    400352: group_3 4
+    400354: group_3 5
+    400356: Group_4
+    400358: group_4
+    400360: Group_4 1
+    400362: Group_4 2
+    400364: Group_4 3
+    400366: Group_4 4
+    400368: Group_4 5
+    400370: Group_5
+    400372: group_5
+    400374: Group_7
+    400376: Group_7 1
+    400378: Group_7 2
+    400380: Group_7 3
+    400382: Group_7 4
+    400384: Group_7 5
+    400386: ID110
+    400388: ID116
+    400390: ID122
+    400392: ID128
+    400394: ID134
+    400396: ID140
+    400398: ID165
+    400400: ID165 1
+    400402: ID165 2
+    400404: ID165 3
+    400406: ID165 4
+    400408: ID165 5
+    400410: ID173
+    400412: ID173 1
+    400414: ID173 2
+    400416: ID173 3
+    400418: ID173 4
+    400420: ID173 5
+    400422: ID179
+    400424: ID179 1
+    400426: ID179 2
+    400428: ID179 3
+    400430: ID179 4
+    400432: ID179 5
+    400434: ID187
+    400436: ID187 1
+    400438: ID187 2
+    400440: ID187 3
+    400442: ID187 4
+    400444: ID187 5
+    400446: ID193
+    400448: ID193 1
+    400450: ID193 2
+    400452: ID193 3
+    400454: ID193 4
+    400456: ID193 5
+    400458: ID199
+    400460: ID199 1
+    400462: ID199 2
+    400464: ID199 3
+    400466: ID199 4
+    400468: ID199 5
+    400470: ID205
+    400472: ID205 1
+    400474: ID205 2
+    400476: ID205 3
+    400478: ID205 4
+    400480: ID205 5
+    400482: ID211
+    400484: ID211 1
+    400486: ID211 2
+    400488: ID211 3
+    400490: ID211 4
+    400492: ID211 5
+    400494: ID217
+    400496: ID217 1
+    400498: ID217 2
+    400500: ID217 3
+    400502: ID217 4
+    400504: ID217 5
+    400506: ID223
+    400508: ID223 1
+    400510: ID223 2
+    400512: ID223 3
+    400514: ID223 4
+    400516: ID223 5
+    400518: ID49
+    400520: ID49 1
+    400522: ID49 2
+    400524: ID49 3
+    400526: ID49 4
+    400528: ID49 5
+    400530: ID55
+    400532: ID55 1
+    400534: ID55 2
+    400536: ID55 3
+    400538: ID55 4
+    400540: ID55 5
+    400542: ID70
+    400544: ID70 1
+    400546: ID70 2
+    400548: ID70 3
+    400550: ID70 4
+    400552: ID70 5
+    400554: ID78
+    400556: ID78 1
+    400558: ID78 2
+    400560: ID78 3
+    400562: ID78 4
+    400564: ID78 5
+    400566: ID86
+    400568: ID86 1
+    400570: ID86 2
+    400572: ID86 3
+    400574: ID86 4
+    400576: ID86 5
+    400578: ID92
+    400580: ID92 1
+    400582: ID92 2
+    400584: ID92 3
+    400586: ID92 4
+    400588: ID92 5
+    400590: instance_0
+    400592: instance_1
+    400594: instance_1 1
+    400596: instance_10
+    400598: instance_10 1
+    400600: instance_10 2
+    400602: instance_10 3
+    400604: instance_10 4
+    400606: instance_10 5
+    400608: instance_11
+    400610: instance_11 1
+    400612: instance_11 2
+    400614: instance_11 3
+    400616: instance_11 4
+    400618: instance_11 5
+    400620: instance_12
+    400622: instance_12 1
+    400624: instance_12 2
+    400626: instance_12 3
+    400628: instance_12 4
+    400630: instance_12 5
+    400632: instance_13
+    400634: instance_13 1
+    400636: instance_13 2
+    400638: instance_13 3
+    400640: instance_13 4
+    400642: instance_13 5
+    400644: instance_14
+    400646: instance_14 1
+    400648: instance_14 2
+    400650: instance_14 3
+    400652: instance_14 4
+    400654: instance_14 5
+    400656: instance_15
+    400658: instance_15 1
+    400660: instance_16
+    400662: instance_17
+    400664: instance_18
+    400666: instance_19
+    400668: instance_2
+    400670: instance_2 1
+    400672: instance_2 2
+    400674: instance_2 3
+    400676: instance_2 4
+    400678: instance_2 5
+    400680: instance_20
+    400682: instance_21
+    400684: instance_22
+    400686: instance_23
+    400688: instance_24
+    400690: instance_25
+    400692: instance_26
+    400694: instance_27
+    400696: instance_28
+    400698: instance_29
+    400700: instance_3
+    400702: instance_3 1
+    400704: instance_3 10
+    400706: instance_3 11
+    400708: instance_3 12
+    400710: instance_3 13
+    400712: instance_3 14
+    400714: instance_3 15
+    400716: instance_3 16
+    400718: instance_3 17
+    400720: instance_3 18
+    400722: instance_3 19
+    400724: instance_3 2
+    400726: instance_3 20
+    400728: instance_3 21
+    400730: instance_3 22
+    400732: instance_3 23
+    400734: instance_3 24
+    400736: instance_3 25
+    400738: instance_3 26
+    400740: instance_3 27
+    400742: instance_3 28
+    400744: instance_3 29
+    400746: instance_3 3
+    400748: instance_3 30
+    400750: instance_3 31
+    400752: instance_3 32
+    400754: instance_3 33
+    400756: instance_3 34
+    400758: instance_3 35
+    400760: instance_3 36
+    400762: instance_3 37
+    400764: instance_3 38
+    400766: instance_3 39
+    400768: instance_3 4
+    400770: instance_3 40
+    400772: instance_3 41
+    400774: instance_3 42
+    400776: instance_3 43
+    400778: instance_3 44
+    400780: instance_3 45
+    400782: instance_3 46
+    400784: instance_3 47
+    400786: instance_3 48
+    400788: instance_3 49
+    400790: instance_3 5
+    400792: instance_3 50
+    400794: instance_3 51
+    400796: instance_3 52
+    400798: instance_3 53
+    400800: instance_3 54
+    400802: instance_3 55
+    400804: instance_3 56
+    400806: instance_3 57
+    400808: instance_3 58
+    400810: instance_3 59
+    400812: instance_3 6
+    400814: instance_3 60
+    400816: instance_3 61
+    400818: instance_3 62
+    400820: instance_3 63
+    400822: instance_3 64
+    400824: instance_3 65
+    400826: instance_3 66
+    400828: instance_3 67
+    400830: instance_3 68
+    400832: instance_3 69
+    400834: instance_3 7
+    400836: instance_3 70
+    400838: instance_3 71
+    400840: instance_3 72
+    400842: instance_3 73
+    400844: instance_3 74
+    400846: instance_3 75
+    400848: instance_3 8
+    400850: instance_3 9
+    400852: instance_30
+    400854: instance_31
+    400856: instance_32
+    400858: instance_33
+    400860: instance_34
+    400862: instance_35
+    400864: instance_36
+    400866: instance_37
+    400868: instance_38
+    400870: instance_39
+    400872: instance_4
+    400874: instance_4 1
+    400876: instance_4 10
+    400878: instance_4 11
+    400880: instance_4 12
+    400882: instance_4 13
+    400884: instance_4 14
+    400886: instance_4 15
+    400888: instance_4 16
+    400890: instance_4 17
+    400892: instance_4 18
+    400894: instance_4 19
+    400896: instance_4 2
+    400898: instance_4 20
+    400900: instance_4 21
+    400902: instance_4 22
+    400904: instance_4 23
+    400906: instance_4 24
+    400908: instance_4 25
+    400910: instance_4 26
+    400912: instance_4 27
+    400914: instance_4 28
+    400916: instance_4 29
+    400918: instance_4 3
+    400920: instance_4 30
+    400922: instance_4 31
+    400924: instance_4 32
+    400926: instance_4 33
+    400928: instance_4 34
+    400930: instance_4 35
+    400932: instance_4 36
+    400934: instance_4 37
+    400936: instance_4 38
+    400938: instance_4 39
+    400940: instance_4 4
+    400942: instance_4 40
+    400944: instance_4 41
+    400946: instance_4 42
+    400948: instance_4 43
+    400950: instance_4 44
+    400952: instance_4 45
+    400954: instance_4 46
+    400956: instance_4 47
+    400958: instance_4 48
+    400960: instance_4 49
+    400962: instance_4 5
+    400964: instance_4 50
+    400966: instance_4 51
+    400968: instance_4 52
+    400970: instance_4 53
+    400972: instance_4 54
+    400974: instance_4 55
+    400976: instance_4 56
+    400978: instance_4 57
+    400980: instance_4 58
+    400982: instance_4 59
+    400984: instance_4 6
+    400986: instance_4 60
+    400988: instance_4 61
+    400990: instance_4 62
+    400992: instance_4 63
+    400994: instance_4 64
+    400996: instance_4 65
+    400998: instance_4 66
+    401000: instance_4 67
+    401002: instance_4 68
+    401004: instance_4 69
+    401006: instance_4 7
+    401008: instance_4 70
+    401010: instance_4 71
+    401012: instance_4 72
+    401014: instance_4 73
+    401016: instance_4 74
+    401018: instance_4 75
+    401020: instance_4 8
+    401022: instance_4 9
+    401024: instance_40
+    401026: instance_5
+    401028: instance_5 1
+    401030: instance_5 2
+    401032: instance_5 3
+    401034: instance_5 4
+    401036: instance_5 5
+    401038: instance_6
+    401040: instance_6 1
+    401042: instance_6 2
+    401044: instance_6 3
+    401046: instance_6 4
+    401048: instance_6 5
+    401050: instance_7
+    401052: instance_7 1
+    401054: instance_7 2
+    401056: instance_7 3
+    401058: instance_7 4
+    401060: instance_7 5
+    401062: instance_8
+    401064: instance_8 1
+    401066: instance_8 2
+    401068: instance_8 3
+    401070: instance_8 4
+    401072: instance_8 5
+    401074: instance_9
+    401076: instance_9 1
+    401078: instance_9 2
+    401080: instance_9 3
+    401082: instance_9 4
+    401084: instance_9 5
+    401086: Last Saved SketchUp View
+    401088: //RootNode
+    401090: Two_chain_parts
+    401092: Two_chain_parts 1
+    401094: Two_chain_parts 10
+    401096: Two_chain_parts 11
+    401098: Two_chain_parts 12
+    401100: Two_chain_parts 13
+    401102: Two_chain_parts 14
+    401104: Two_chain_parts 15
+    401106: Two_chain_parts 16
+    401108: Two_chain_parts 17
+    401110: Two_chain_parts 18
+    401112: Two_chain_parts 19
+    401114: Two_chain_parts 2
+    401116: Two_chain_parts 20
+    401118: Two_chain_parts 21
+    401120: Two_chain_parts 22
+    401122: Two_chain_parts 23
+    401124: Two_chain_parts 24
+    401126: Two_chain_parts 25
+    401128: Two_chain_parts 26
+    401130: Two_chain_parts 27
+    401132: Two_chain_parts 28
+    401134: Two_chain_parts 29
+    401136: Two_chain_parts 3
+    401138: Two_chain_parts 30
+    401140: Two_chain_parts 31
+    401142: Two_chain_parts 32
+    401144: Two_chain_parts 33
+    401146: Two_chain_parts 34
+    401148: Two_chain_parts 35
+    401150: Two_chain_parts 36
+    401152: Two_chain_parts 37
+    401154: Two_chain_parts 38
+    401156: Two_chain_parts 39
+    401158: Two_chain_parts 4
+    401160: Two_chain_parts 40
+    401162: Two_chain_parts 41
+    401164: Two_chain_parts 42
+    401166: Two_chain_parts 43
+    401168: Two_chain_parts 44
+    401170: Two_chain_parts 45
+    401172: Two_chain_parts 46
+    401174: Two_chain_parts 47
+    401176: Two_chain_parts 48
+    401178: Two_chain_parts 49
+    401180: Two_chain_parts 5
+    401182: Two_chain_parts 50
+    401184: Two_chain_parts 51
+    401186: Two_chain_parts 52
+    401188: Two_chain_parts 53
+    401190: Two_chain_parts 54
+    401192: Two_chain_parts 55
+    401194: Two_chain_parts 56
+    401196: Two_chain_parts 57
+    401198: Two_chain_parts 58
+    401200: Two_chain_parts 59
+    401202: Two_chain_parts 6
+    401204: Two_chain_parts 60
+    401206: Two_chain_parts 61
+    401208: Two_chain_parts 62
+    401210: Two_chain_parts 63
+    401212: Two_chain_parts 64
+    401214: Two_chain_parts 65
+    401216: Two_chain_parts 66
+    401218: Two_chain_parts 67
+    401220: Two_chain_parts 68
+    401222: Two_chain_parts 69
+    401224: Two_chain_parts 7
+    401226: Two_chain_parts 70
+    401228: Two_chain_parts 71
+    401230: Two_chain_parts 72
+    401232: Two_chain_parts 73
+    401234: Two_chain_parts 74
+    401236: Two_chain_parts 75
+    401238: Two_chain_parts 8
+    401240: Two_chain_parts 9
+    2300000: Chain_part
+    2300002: Chain_part 1
+    2300004: Chain_part 10
+    2300006: Chain_part 100
+    2300008: Chain_part 101
+    2300010: Chain_part 102
+    2300012: Chain_part 103
+    2300014: Chain_part 104
+    2300016: Chain_part 105
+    2300018: Chain_part 106
+    2300020: Chain_part 107
+    2300022: Chain_part 108
+    2300024: Chain_part 109
+    2300026: Chain_part 11
+    2300028: Chain_part 110
+    2300030: Chain_part 111
+    2300032: Chain_part 112
+    2300034: Chain_part 113
+    2300036: Chain_part 114
+    2300038: Chain_part 115
+    2300040: Chain_part 116
+    2300042: Chain_part 117
+    2300044: Chain_part 118
+    2300046: Chain_part 119
+    2300048: Chain_part 12
+    2300050: Chain_part 120
+    2300052: Chain_part 121
+    2300054: Chain_part 122
+    2300056: Chain_part 123
+    2300058: Chain_part 124
+    2300060: Chain_part 125
+    2300062: Chain_part 126
+    2300064: Chain_part 127
+    2300066: Chain_part 128
+    2300068: Chain_part 129
+    2300070: Chain_part 13
+    2300072: Chain_part 130
+    2300074: Chain_part 131
+    2300076: Chain_part 132
+    2300078: Chain_part 133
+    2300080: Chain_part 134
+    2300082: Chain_part 135
+    2300084: Chain_part 136
+    2300086: Chain_part 137
+    2300088: Chain_part 138
+    2300090: Chain_part 139
+    2300092: Chain_part 14
+    2300094: Chain_part 140
+    2300096: Chain_part 141
+    2300098: Chain_part 142
+    2300100: Chain_part 143
+    2300102: Chain_part 144
+    2300104: Chain_part 145
+    2300106: Chain_part 146
+    2300108: Chain_part 147
+    2300110: Chain_part 148
+    2300112: Chain_part 149
+    2300114: Chain_part 15
+    2300116: Chain_part 150
+    2300118: Chain_part 151
+    2300120: Chain_part 16
+    2300122: Chain_part 17
+    2300124: Chain_part 18
+    2300126: Chain_part 19
+    2300128: Chain_part 2
+    2300130: Chain_part 20
+    2300132: Chain_part 21
+    2300134: Chain_part 22
+    2300136: Chain_part 23
+    2300138: Chain_part 24
+    2300140: Chain_part 25
+    2300142: Chain_part 26
+    2300144: Chain_part 27
+    2300146: Chain_part 28
+    2300148: Chain_part 29
+    2300150: Chain_part 3
+    2300152: Chain_part 30
+    2300154: Chain_part 31
+    2300156: Chain_part 32
+    2300158: Chain_part 33
+    2300160: Chain_part 34
+    2300162: Chain_part 35
+    2300164: Chain_part 36
+    2300166: Chain_part 37
+    2300168: Chain_part 38
+    2300170: Chain_part 39
+    2300172: Chain_part 4
+    2300174: Chain_part 40
+    2300176: Chain_part 41
+    2300178: Chain_part 42
+    2300180: Chain_part 43
+    2300182: Chain_part 44
+    2300184: Chain_part 45
+    2300186: Chain_part 46
+    2300188: Chain_part 47
+    2300190: Chain_part 48
+    2300192: Chain_part 49
+    2300194: Chain_part 5
+    2300196: Chain_part 50
+    2300198: Chain_part 51
+    2300200: Chain_part 52
+    2300202: Chain_part 53
+    2300204: Chain_part 54
+    2300206: Chain_part 55
+    2300208: Chain_part 56
+    2300210: Chain_part 57
+    2300212: Chain_part 58
+    2300214: Chain_part 59
+    2300216: Chain_part 6
+    2300218: Chain_part 60
+    2300220: Chain_part 61
+    2300222: Chain_part 62
+    2300224: Chain_part 63
+    2300226: Chain_part 64
+    2300228: Chain_part 65
+    2300230: Chain_part 66
+    2300232: Chain_part 67
+    2300234: Chain_part 68
+    2300236: Chain_part 69
+    2300238: Chain_part 7
+    2300240: Chain_part 70
+    2300242: Chain_part 71
+    2300244: Chain_part 72
+    2300246: Chain_part 73
+    2300248: Chain_part 74
+    2300250: Chain_part 75
+    2300252: Chain_part 76
+    2300254: Chain_part 77
+    2300256: Chain_part 78
+    2300258: Chain_part 79
+    2300260: Chain_part 8
+    2300262: Chain_part 80
+    2300264: Chain_part 81
+    2300266: Chain_part 82
+    2300268: Chain_part 83
+    2300270: Chain_part 84
+    2300272: Chain_part 85
+    2300274: Chain_part 86
+    2300276: Chain_part 87
+    2300278: Chain_part 88
+    2300280: Chain_part 89
+    2300282: Chain_part 9
+    2300284: Chain_part 90
+    2300286: Chain_part 91
+    2300288: Chain_part 92
+    2300290: Chain_part 93
+    2300292: Chain_part 94
+    2300294: Chain_part 95
+    2300296: Chain_part 96
+    2300298: Chain_part 97
+    2300300: Chain_part 98
+    2300302: Chain_part 99
+    2300304: flame
+    2300306: flame 1
+    2300308: flame 2
+    2300310: flame 3
+    2300312: flame 4
+    2300314: flame 5
+    2300316: group_2
+    2300318: group_2 1
+    2300320: group_2 2
+    2300322: group_2 3
+    2300324: group_2 4
+    2300326: group_2 5
+    2300328: group_3
+    2300330: group_3 1
+    2300332: group_3 2
+    2300334: group_3 3
+    2300336: group_3 4
+    2300338: group_3 5
+    2300340: group_4
+    2300342: ID110
+    2300344: ID116
+    2300346: ID122
+    2300348: ID128
+    2300350: ID134
+    2300352: ID140
+    2300354: ID165
+    2300356: ID165 1
+    2300358: ID165 2
+    2300360: ID165 3
+    2300362: ID165 4
+    2300364: ID165 5
+    2300366: ID173
+    2300368: ID173 1
+    2300370: ID173 2
+    2300372: ID173 3
+    2300374: ID173 4
+    2300376: ID173 5
+    2300378: ID179
+    2300380: ID179 1
+    2300382: ID179 2
+    2300384: ID179 3
+    2300386: ID179 4
+    2300388: ID179 5
+    2300390: ID187
+    2300392: ID187 1
+    2300394: ID187 2
+    2300396: ID187 3
+    2300398: ID187 4
+    2300400: ID187 5
+    2300402: ID193
+    2300404: ID193 1
+    2300406: ID193 2
+    2300408: ID193 3
+    2300410: ID193 4
+    2300412: ID193 5
+    2300414: ID199
+    2300416: ID199 1
+    2300418: ID199 2
+    2300420: ID199 3
+    2300422: ID199 4
+    2300424: ID199 5
+    2300426: ID205
+    2300428: ID205 1
+    2300430: ID205 2
+    2300432: ID205 3
+    2300434: ID205 4
+    2300436: ID205 5
+    2300438: ID211
+    2300440: ID211 1
+    2300442: ID211 2
+    2300444: ID211 3
+    2300446: ID211 4
+    2300448: ID211 5
+    2300450: ID217
+    2300452: ID217 1
+    2300454: ID217 2
+    2300456: ID217 3
+    2300458: ID217 4
+    2300460: ID217 5
+    2300462: ID49
+    2300464: ID49 1
+    2300466: ID49 2
+    2300468: ID49 3
+    2300470: ID49 4
+    2300472: ID49 5
+    2300474: ID55
+    2300476: ID55 1
+    2300478: ID55 2
+    2300480: ID55 3
+    2300482: ID55 4
+    2300484: ID55 5
+    2300486: ID70
+    2300488: ID70 1
+    2300490: ID70 2
+    2300492: ID70 3
+    2300494: ID70 4
+    2300496: ID70 5
+    2300498: ID78
+    2300500: ID78 1
+    2300502: ID78 2
+    2300504: ID78 3
+    2300506: ID78 4
+    2300508: ID78 5
+    2300510: ID86
+    2300512: ID86 1
+    2300514: ID86 2
+    2300516: ID86 3
+    2300518: ID86 4
+    2300520: ID86 5
+    2300522: ID92
+    2300524: ID92 1
+    2300526: ID92 2
+    2300528: ID92 3
+    2300530: ID92 4
+    2300532: ID92 5
+    3300000: Chain_part
+    3300002: Chain_part 1
+    3300004: Chain_part 10
+    3300006: Chain_part 100
+    3300008: Chain_part 101
+    3300010: Chain_part 102
+    3300012: Chain_part 103
+    3300014: Chain_part 104
+    3300016: Chain_part 105
+    3300018: Chain_part 106
+    3300020: Chain_part 107
+    3300022: Chain_part 108
+    3300024: Chain_part 109
+    3300026: Chain_part 11
+    3300028: Chain_part 110
+    3300030: Chain_part 111
+    3300032: Chain_part 112
+    3300034: Chain_part 113
+    3300036: Chain_part 114
+    3300038: Chain_part 115
+    3300040: Chain_part 116
+    3300042: Chain_part 117
+    3300044: Chain_part 118
+    3300046: Chain_part 119
+    3300048: Chain_part 12
+    3300050: Chain_part 120
+    3300052: Chain_part 121
+    3300054: Chain_part 122
+    3300056: Chain_part 123
+    3300058: Chain_part 124
+    3300060: Chain_part 125
+    3300062: Chain_part 126
+    3300064: Chain_part 127
+    3300066: Chain_part 128
+    3300068: Chain_part 129
+    3300070: Chain_part 13
+    3300072: Chain_part 130
+    3300074: Chain_part 131
+    3300076: Chain_part 132
+    3300078: Chain_part 133
+    3300080: Chain_part 134
+    3300082: Chain_part 135
+    3300084: Chain_part 136
+    3300086: Chain_part 137
+    3300088: Chain_part 138
+    3300090: Chain_part 139
+    3300092: Chain_part 14
+    3300094: Chain_part 140
+    3300096: Chain_part 141
+    3300098: Chain_part 142
+    3300100: Chain_part 143
+    3300102: Chain_part 144
+    3300104: Chain_part 145
+    3300106: Chain_part 146
+    3300108: Chain_part 147
+    3300110: Chain_part 148
+    3300112: Chain_part 149
+    3300114: Chain_part 15
+    3300116: Chain_part 150
+    3300118: Chain_part 151
+    3300120: Chain_part 16
+    3300122: Chain_part 17
+    3300124: Chain_part 18
+    3300126: Chain_part 19
+    3300128: Chain_part 2
+    3300130: Chain_part 20
+    3300132: Chain_part 21
+    3300134: Chain_part 22
+    3300136: Chain_part 23
+    3300138: Chain_part 24
+    3300140: Chain_part 25
+    3300142: Chain_part 26
+    3300144: Chain_part 27
+    3300146: Chain_part 28
+    3300148: Chain_part 29
+    3300150: Chain_part 3
+    3300152: Chain_part 30
+    3300154: Chain_part 31
+    3300156: Chain_part 32
+    3300158: Chain_part 33
+    3300160: Chain_part 34
+    3300162: Chain_part 35
+    3300164: Chain_part 36
+    3300166: Chain_part 37
+    3300168: Chain_part 38
+    3300170: Chain_part 39
+    3300172: Chain_part 4
+    3300174: Chain_part 40
+    3300176: Chain_part 41
+    3300178: Chain_part 42
+    3300180: Chain_part 43
+    3300182: Chain_part 44
+    3300184: Chain_part 45
+    3300186: Chain_part 46
+    3300188: Chain_part 47
+    3300190: Chain_part 48
+    3300192: Chain_part 49
+    3300194: Chain_part 5
+    3300196: Chain_part 50
+    3300198: Chain_part 51
+    3300200: Chain_part 52
+    3300202: Chain_part 53
+    3300204: Chain_part 54
+    3300206: Chain_part 55
+    3300208: Chain_part 56
+    3300210: Chain_part 57
+    3300212: Chain_part 58
+    3300214: Chain_part 59
+    3300216: Chain_part 6
+    3300218: Chain_part 60
+    3300220: Chain_part 61
+    3300222: Chain_part 62
+    3300224: Chain_part 63
+    3300226: Chain_part 64
+    3300228: Chain_part 65
+    3300230: Chain_part 66
+    3300232: Chain_part 67
+    3300234: Chain_part 68
+    3300236: Chain_part 69
+    3300238: Chain_part 7
+    3300240: Chain_part 70
+    3300242: Chain_part 71
+    3300244: Chain_part 72
+    3300246: Chain_part 73
+    3300248: Chain_part 74
+    3300250: Chain_part 75
+    3300252: Chain_part 76
+    3300254: Chain_part 77
+    3300256: Chain_part 78
+    3300258: Chain_part 79
+    3300260: Chain_part 8
+    3300262: Chain_part 80
+    3300264: Chain_part 81
+    3300266: Chain_part 82
+    3300268: Chain_part 83
+    3300270: Chain_part 84
+    3300272: Chain_part 85
+    3300274: Chain_part 86
+    3300276: Chain_part 87
+    3300278: Chain_part 88
+    3300280: Chain_part 89
+    3300282: Chain_part 9
+    3300284: Chain_part 90
+    3300286: Chain_part 91
+    3300288: Chain_part 92
+    3300290: Chain_part 93
+    3300292: Chain_part 94
+    3300294: Chain_part 95
+    3300296: Chain_part 96
+    3300298: Chain_part 97
+    3300300: Chain_part 98
+    3300302: Chain_part 99
+    3300304: flame
+    3300306: flame 1
+    3300308: flame 2
+    3300310: flame 3
+    3300312: flame 4
+    3300314: flame 5
+    3300316: group_2
+    3300318: group_2 1
+    3300320: group_2 2
+    3300322: group_2 3
+    3300324: group_2 4
+    3300326: group_2 5
+    3300328: group_3
+    3300330: group_3 1
+    3300332: group_3 2
+    3300334: group_3 3
+    3300336: group_3 4
+    3300338: group_3 5
+    3300340: group_4
+    3300342: ID110
+    3300344: ID116
+    3300346: ID122
+    3300348: ID128
+    3300350: ID134
+    3300352: ID140
+    3300354: ID165
+    3300356: ID165 1
+    3300358: ID165 2
+    3300360: ID165 3
+    3300362: ID165 4
+    3300364: ID165 5
+    3300366: ID173
+    3300368: ID173 1
+    3300370: ID173 2
+    3300372: ID173 3
+    3300374: ID173 4
+    3300376: ID173 5
+    3300378: ID179
+    3300380: ID179 1
+    3300382: ID179 2
+    3300384: ID179 3
+    3300386: ID179 4
+    3300388: ID179 5
+    3300390: ID187
+    3300392: ID187 1
+    3300394: ID187 2
+    3300396: ID187 3
+    3300398: ID187 4
+    3300400: ID187 5
+    3300402: ID193
+    3300404: ID193 1
+    3300406: ID193 2
+    3300408: ID193 3
+    3300410: ID193 4
+    3300412: ID193 5
+    3300414: ID199
+    3300416: ID199 1
+    3300418: ID199 2
+    3300420: ID199 3
+    3300422: ID199 4
+    3300424: ID199 5
+    3300426: ID205
+    3300428: ID205 1
+    3300430: ID205 2
+    3300432: ID205 3
+    3300434: ID205 4
+    3300436: ID205 5
+    3300438: ID211
+    3300440: ID211 1
+    3300442: ID211 2
+    3300444: ID211 3
+    3300446: ID211 4
+    3300448: ID211 5
+    3300450: ID217
+    3300452: ID217 1
+    3300454: ID217 2
+    3300456: ID217 3
+    3300458: ID217 4
+    3300460: ID217 5
+    3300462: ID49
+    3300464: ID49 1
+    3300466: ID49 2
+    3300468: ID49 3
+    3300470: ID49 4
+    3300472: ID49 5
+    3300474: ID55
+    3300476: ID55 1
+    3300478: ID55 2
+    3300480: ID55 3
+    3300482: ID55 4
+    3300484: ID55 5
+    3300486: ID70
+    3300488: ID70 1
+    3300490: ID70 2
+    3300492: ID70 3
+    3300494: ID70 4
+    3300496: ID70 5
+    3300498: ID78
+    3300500: ID78 1
+    3300502: ID78 2
+    3300504: ID78 3
+    3300506: ID78 4
+    3300508: ID78 5
+    3300510: ID86
+    3300512: ID86 1
+    3300514: ID86 2
+    3300516: ID86 3
+    3300518: ID86 4
+    3300520: ID86 5
+    3300522: ID92
+    3300524: ID92 1
+    3300526: ID92 2
+    3300528: ID92 3
+    3300530: ID92 4
+    3300532: ID92 5
+    4300000: Chain_part
+    4300002: group_2
+    4300004: ID49
+    4300006: ID55
+    4300008: group_3
+    4300010: ID70
+    4300012: ID78
+    4300014: ID86
+    4300016: ID92
+    4300018: group_4
+    4300020: ID110
+    4300022: ID116
+    4300024: ID122
+    4300026: ID128
+    4300028: ID134
+    4300030: ID140
+    4300032: flame
+    4300034: ID165
+    4300036: ID173
+    4300038: ID179
+    4300040: ID187
+    4300042: ID193
+    4300044: ID199
+    4300046: ID205
+    4300048: ID211
+    4300050: ID217
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
