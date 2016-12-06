@@ -38,6 +38,10 @@ public class PazzledObject : MonoBehaviour {
         {
             UnityStandardAssets.Characters.FirstPerson.FirstPersonController.RecRoom_Key = true;
         }
+        else if (transform.name == "ChinaCabinet")
+        {
+            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.Dining_Key = true;
+        }
 
         t.textUpdate("You've found a key! I wonder what door it opens...");
 

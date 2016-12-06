@@ -51,6 +51,10 @@ public class Note : MonoBehaviour
         {
             text = "Want to escape? Too bad, you need to find keys. \nKeys are placed everywhere in this house.\nLook for the Riddles, it will help you";
         }
+        else if (transform.name == "Riddle6")
+        {
+            text = "A place setting appears to be missing at the able.\nIt may help to finish the job";
+        }
         t.textUpdate(text);
     }
 }
