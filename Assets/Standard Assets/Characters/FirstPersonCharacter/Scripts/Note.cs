@@ -71,7 +71,7 @@ public class Note : MonoBehaviour
         }
         else if (transform.name == "Riddle11")
         {
-            text = "You walked by the key when you walked in\nBetter turn around";
+            text = "They key may have been left in a corner?\nHard to say after all these years\nOr maybe its right by the door you came in?";
         }
         t.textUpdate(text);
     }
