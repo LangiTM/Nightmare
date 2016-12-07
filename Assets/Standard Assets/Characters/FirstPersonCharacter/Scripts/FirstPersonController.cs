@@ -411,6 +411,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     Application.LoadLevel("MainFloorBack");
                 }
             }
+            else if (collide.gameObject.name.Equals("DoorEastToEnt")) {
+                
+                    Application.LoadLevel("EntranceEnding");
+                
+            }
             else if (collide.gameObject.name.Equals("DoorDinToWest")) {
                     Application.LoadLevel("MainFloor");
             }
