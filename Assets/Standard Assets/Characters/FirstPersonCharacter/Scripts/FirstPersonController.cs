@@ -398,6 +398,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Application.LoadLevel("MainFloor");
 
             }
+            else if (collide.gameObject.name.Equals("DoorWestToDin")) 
+            {
+                if (!RecRoom_Key || !MusEsc_Key)
+                    t.textUpdate("The door to the dining hall is locked.");
+                else {
+                    Application.LoadLevel("MainFloorBack");
+                }
+            }
+            else if (collide.gameObject.name.Equals("DoorDinToWest")) {
+                    Application.LoadLevel("MainFloor");
+            }
             //if all keys have been collected 
 
             else if (collide.gameObject.name.Equals("MainDoor") && isCollected())
@@ -432,5 +443,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             else
                 return false;
         }
+        
     }
 }
