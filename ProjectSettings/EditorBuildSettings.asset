@@ -16,4 +16,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
   - enabled: 1
+    path: Assets/Scenes/EntranceEnding.unity
+  - enabled: 1
     path: Assets/Scenes/Ending.unity

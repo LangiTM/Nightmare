@@ -414,9 +414,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if (collide.gameObject.name.Equals("DoorEastToEnt")) {
                 
-                    Application.LoadLevel("EntranceEnding");
-                
-            }
+                    if (!PantryEsc_Key)
+                        t.textUpdate("The door to the dining hall is locked.");
+                    else {
+                        Application.LoadLevel("EntranceEnding");
+                    }
+
+
+                }
             else if (collide.gameObject.name.Equals("DoorDinToWest")) {
                     Application.LoadLevel("MainFloor");
             }
