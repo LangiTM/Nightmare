@@ -57,6 +57,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public static Boolean MusEsc_Key;
         public static Boolean Pantry_Key;
         public static Boolean PantryEsc_Key;
+        public static Boolean Final_Key;
 
         /***************************************************
          * For storing player status
@@ -111,7 +112,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 //Debug.Log(hitted.name);
                 //if the object is interactable (for instance Rock2) 
                 if (hitted.name == "key_1" || hitted.name == "key_2" || hitted.name == "key_3" || hitted.name == "ChinaCabinet"
-                    || hitted.name == "Crate (2)" || hitted.name == "Pot (6)" || hitted.name == "Barrel (19)")
+                    || hitted.name == "Crate (2)" || hitted.name == "Pot (6)" || hitted.name == "Barrel (19)" || hitted.name == "Bucket")
                 {
                     PazzledObject po = hitted.GetComponent<PazzledObject>();
                     po.findKey();
@@ -449,7 +450,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         //for checking if all keys have been collected
         private Boolean isCollected()
         {
-            if (WestHall_Key && MusicRoom_Key && RecRoom_Key && Dining_Key && MusEsc_Key && Pantry_Key && PantryEsc_Key)
+            if (WestHall_Key && MusicRoom_Key && RecRoom_Key && Dining_Key && MusEsc_Key && Pantry_Key && PantryEsc_Key && Final_Key)
             {
                 return true;
             }

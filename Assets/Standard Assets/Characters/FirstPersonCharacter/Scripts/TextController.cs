@@ -67,7 +67,11 @@ public class TextController : MonoBehaviour
         {
             keys[7] = "\n        -PantryEsc Key";
         }
-        String text="You have following key"+keys[0]+keys[1]+keys[2] + keys[3] + keys[4] + keys[5] + keys[6] + keys[7];
+        if (UnityStandardAssets.Characters.FirstPerson.FirstPersonController.Final_Key)
+        {
+            keys[8] = "\n        -Final Key";
+        }
+        String text="You have following key"+keys[0]+keys[1]+keys[2] + keys[3] + keys[4] + keys[5] + keys[6] + keys[7] + keys[8];
         condText.text = text;
     }
     public void textUpdate(string text)

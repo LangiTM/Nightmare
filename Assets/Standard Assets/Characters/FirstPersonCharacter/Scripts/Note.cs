@@ -73,6 +73,10 @@ public class Note : MonoBehaviour
         {
             text = "They key may have been left in a corner?\nHard to say after all these years\nOr maybe its right by the door you came in?";
         }
+        else if (transform.name == "Riddle12")
+        {
+            text = "The final key is in here\nLots of meat, but where do the scraps go?";
+        }
         t.textUpdate(text);
     }
 }

@@ -54,6 +54,10 @@ public class PazzledObject : MonoBehaviour {
         {
             UnityStandardAssets.Characters.FirstPerson.FirstPersonController.PantryEsc_Key = true;
         }
+        else if (transform.name == "Bucket")
+        {
+            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.Final_Key = true;
+        }
 
 
         t.textUpdate("You've found a key! I wonder what door it opens...");
