@@ -63,6 +63,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
          * ************************************************/
         public Boolean inWardrobe;
         public Boolean isPeeking;
+        public static String currLevel;
 
         GameObject refg;
         TextController t;
@@ -75,7 +76,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             //get text controller for showing text 
             refg= GameObject.Find("TextController");
             t = refg.GetComponent<TextController>();
-
+            currLevel = Application.loadedLevelName;
+            Debug.Log(currLevel);
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
             m_OriginalCameraPosition = m_Camera.transform.localPosition;
@@ -395,6 +397,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             else if(collide.gameObject.tag.Equals("Door_out") )//for outside door. 
             {
+                //set checkpoint
+                currLevel = "MainFloor";
                 Application.LoadLevel("MainFloor");
 
             }
@@ -423,9 +427,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
            
             else if (collide.gameObject.tag.Equals("Enemy")) //when enemy attacked player 
             {
-                MusicRoom_Key = false;
-                RecRoom_Key = false;
-                WestHall_Key = false;
+                if (currLevel.Equals("MainFloor"))
+                {
+                    MusicRoom_Key = false;
+                    RecRoom_Key = false;
+                    WestHall_Key = false;
+                }
                 Application.LoadLevel("DeathScreen");  
             }
             else if (collide.gameObject.tag.Equals("Door")) {
