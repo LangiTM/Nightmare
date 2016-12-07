@@ -407,6 +407,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 if (!RecRoom_Key || !MusEsc_Key)
                     t.textUpdate("The door to the dining hall is locked.");
                 else {
+                    currLevel = "MainFloorBack";
                     Application.LoadLevel("MainFloorBack");
                 }
             }
