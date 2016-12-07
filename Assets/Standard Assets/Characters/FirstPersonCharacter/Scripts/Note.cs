@@ -37,12 +37,10 @@ public class Note : MonoBehaviour
         {
             text = "Beautiful music can be heard from inside.\nYou'll definetly need to look for a good book,\n and maybe a nice desk to read it at.";
         }
-        //Make it so the door is locked from the inside
         else if(transform.name == "Riddle3")
         {
             text = "This room is already unlocked for you,\n but a mystery may keep you from ever leaving...";
         }
-        //This key isnt being picked up :(
         else if (transform.name == "Riddle4")
         {
             text = "Haha you fool. You're trapped in here for good.\nMight as well go enjoy a nice drink at the bar.";
@@ -62,6 +60,18 @@ public class Note : MonoBehaviour
         else if (transform.name == "Riddle8")
         {
             text = "Clean out the pots before entering the pantry";
+        }
+        else if (transform.name == "Riddle9")
+        {
+            text = "The pantry is a maze.\nThe key was lost many years ago\nIt may be worthwhile to check dead ends\nEspecially where there are sacks";
+        }
+        else if (transform.name == "Riddle10")
+        {
+            text = "Ah, you found the fake key!\nThat wont help you here!\nPerhaps its hiding in a barrel?";
+        }
+        else if (transform.name == "Riddle11")
+        {
+            text = "You walked by the key when you walked in\nBetter turn around";
         }
         t.textUpdate(text);
     }

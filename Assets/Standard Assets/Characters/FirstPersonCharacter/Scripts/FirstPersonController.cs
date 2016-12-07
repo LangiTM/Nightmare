@@ -56,6 +56,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public static Boolean Dining_Key;
         public static Boolean MusEsc_Key;
         public static Boolean Pantry_Key;
+        public static Boolean PantryEsc_Key;
 
         /***************************************************
          * For storing player status
@@ -108,7 +109,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 //Debug.Log(hitted.name);
                 //if the object is interactable (for instance Rock2) 
                 if (hitted.name == "key_1" || hitted.name == "key_2" || hitted.name == "key_3" || hitted.name == "ChinaCabinet"
-                    || hitted.name == "Crate (2)" || hitted.name == "Pot (6)")
+                    || hitted.name == "Crate (2)" || hitted.name == "Pot (6)" || hitted.name == "Barrel (19)")
                 {
                     PazzledObject po = hitted.GetComponent<PazzledObject>();
                     po.findKey();
@@ -384,6 +385,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             {
                 transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
             }
+            else if (collide.gameObject.name.Equals("DoorPanToFre") && !PantryEsc_Key)
+            {
+                t.textUpdate("The door to the Freezer is locked.");
+            }
+            else if (collide.gameObject.name.Equals("DoorPanToFre") && PantryEsc_Key)
+            {
+                transform.position = collide.gameObject.GetComponent<DoorBehaviour>().getExitDoorPosition();
+            }
             else if(collide.gameObject.tag.Equals("Door_out") )//for outside door. 
             {
                 Application.LoadLevel("MainFloor");
@@ -416,7 +425,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         //for checking if all keys have been collected
         private Boolean isCollected()
         {
-            if (WestHall_Key && MusicRoom_Key && RecRoom_Key && Dining_Key && MusEsc_Key && Pantry_Key)
+            if (WestHall_Key && MusicRoom_Key && RecRoom_Key && Dining_Key && MusEsc_Key && Pantry_Key && PantryEsc_Key)
             {
                 return true;
             }

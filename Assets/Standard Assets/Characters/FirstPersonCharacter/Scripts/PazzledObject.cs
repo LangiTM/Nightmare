@@ -50,6 +50,11 @@ public class PazzledObject : MonoBehaviour {
         {
             UnityStandardAssets.Characters.FirstPerson.FirstPersonController.Pantry_Key = true;
         }
+        else if (transform.name == "Barrel (19)")
+        {
+            UnityStandardAssets.Characters.FirstPerson.FirstPersonController.PantryEsc_Key = true;
+        }
+
 
         t.textUpdate("You've found a key! I wonder what door it opens...");
 
